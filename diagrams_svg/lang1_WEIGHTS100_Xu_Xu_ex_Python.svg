@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" sds="23" width="600" height="550">
+<text x="128.33" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 128.33, 332)" >C++, picks on</text>
+<text x="195" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 195, 332)" >C++, picks off</text>
+<text x="261.67" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 261.67, 332)" >C#, picks on</text>
+<text x="328.33" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 328.33, 332)" >C#, picks off</text>
+<text x="395" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 395, 332)" >Rust, picks on</text>
+<text x="461.67" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 461.67, 332)" >Rust, picks off</text>
+<polyline points="100,310,100,50" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,310,500,310" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,281.42,500,281.42" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,252.84,500,252.84" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,224.27,500,224.27" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,195.69,500,195.69" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,167.11,500,167.11" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,138.53,500,138.53" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,109.96,500,109.96" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,81.38,500,81.38" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,52.80,500,52.80" stroke="#aaa" stroke-width="1.0"  />
+<text x="96" y="315.83" font-size="14pt" fill="#777"  text-anchor="end" >0</text>
+<text x="96" y="287.26" font-size="14pt" fill="#777"  text-anchor="end" >1000</text>
+<text x="96" y="258.68" font-size="14pt" fill="#777"  text-anchor="end" >2000</text>
+<text x="96" y="230.10" font-size="14pt" fill="#777"  text-anchor="end" >3000</text>
+<text x="96" y="201.52" font-size="14pt" fill="#777"  text-anchor="end" >4000</text>
+<text x="96" y="172.94" font-size="14pt" fill="#777"  text-anchor="end" >5000</text>
+<text x="96" y="144.37" font-size="14pt" fill="#777"  text-anchor="end" >6000</text>
+<text x="96" y="115.79" font-size="14pt" fill="#777"  text-anchor="end" >7000</text>
+<text x="96" y="87.21" font-size="14pt" fill="#777"  text-anchor="end" >8000</text>
+<text x="96" y="58.63" font-size="14pt" fill="#777"  text-anchor="end" >9000</text>
+<text x="30" y="180" font-size="14pt" fill="#777"  text-anchor="middle" transform="rotate(-90, 30, 180)" >execution time [ms]</text>
+<rect x="124.33" y="209.66" width="18" height="100.34" fill="#88AA88" />
+<rect x="191" y="227.12" width="18" height="82.88" fill="#AB89AB" />
+<rect x="257.67" y="50" width="18" height="260" fill="#88AA88" />
+<rect x="324.33" y="57.14" width="18" height="252.86" fill="#AB89AB" />
+<rect x="391" y="75.49" width="18" height="234.51" fill="#88AA88" />
+<rect x="457.67" y="111.67" width="18" height="198.33" fill="#AB89AB" />
+<text x="55" y="30" font-size="20pt" fill="#777"  text-anchor="start" >Test case: 03_WEIGHTS100_Xu_Xu_et_al.in</text>
+
+</svg>
+
