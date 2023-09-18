@@ -1,2 +1,3 @@
-# 0-1_knapsack_DP_top-down_diff_lang
-comparing execution speeds of programming languages
+# 0/1 knapsack with dynamic programming: top-down (recursive) algorithm: comparing execution speeds of programming languages
+
+A work in progress.
