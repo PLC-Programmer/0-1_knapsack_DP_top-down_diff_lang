@@ -88,9 +88,27 @@ Operating system:
 
 ## C++: g++ compiler options for speed optimization
 
+Apparently the choice, or absence, of options for (speed) optimization has a huge influence on the performance of a compiled C++ program with g++: https://gcc.gnu.org/onlinedocs/gcc-11.4.0/gcc/Optimize-Options.html
+
+Well, at least with the presented computational task here.
+
+Compile the C++ source code with command: _$ g++ [options] ./dp_knapsack_top-down_main.cpp -o dp_knapsack_top-down_main_
+
+I experimented with these optimization options on test case _03_WEIGHTS100_Xu_Xu_et_al.in_:
+
+* -O0 (or no -O option) -- Reduce compilation time and make debugging produce the expected results. This is the default.
+
+* -O, -O1 -- Optimize.
+
+* -O2 -- Optimize even more.
+
+* -O3 -- Optimize yet more.
+
+* -Os -- Optimize for size.
+
+* -Ofast -- Disregard strict standards compliance.
+
+<diagram>
 
 
-
-
-...
 
