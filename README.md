@@ -4,7 +4,7 @@
 
 First batch of programming languages:
 * Python: albeit slow, if possible this is my reference for calculating a correct result for an unknown test case
-* C++ (with the _g++ -O3_ optimization option as my best guess so far)
+* C++ (with the _g++ -Ofast_ optimization option as my best guess so far; gcc version 11.4.0 has been used here)
 * C# (release build)
 * Rust (release build)
 
@@ -48,6 +48,47 @@ Since the other test cases can be computed much faster (if possible in my enviro
 ![plot](./diagrams_svg/cs.svg)
 
 ![plot](./diagrams_svg/rust.svg)
+
+## Environment
+
+Hardware:
+
+* CPU: Intel Core i7-11700K, 3.60GHz (11th gen.)
+
+* mainboard: GigaByte Z590 GAMING X, rev.0
+
+* RAM: DDR4, 16GB, 3200-16 Vengeance LPX
+
+Operating system:
+
+* _$ uname -a_ --> _Linux ... 6.2.0-32-generic #32~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug 18 10:40:13 UTC 2 x86_64 x86_64 x86_64_
+
+### Used compiler or builder version, respectively
+
+* **Python**: _$ python3 -V -V_ --> _Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]_
+
+* **C++**: _$ g++ --version_ --> _g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0_
+
+* **C#**:
+
+  _$ dotnet --list-sdks_ --> _7.0.111 [/usr/lib/dotnet/sdk]_
+
+  _$ dotnet --list-runtimes_ -->
+
+    _Microsoft.AspNetCore.App 7.0.11 [/usr/lib/dotnet/shared/Microsoft.AspNetCore.App]_
+
+    _Microsoft.NETCore.App 7.0.11 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]_
+
+* **Rust**:
+
+  _$ cargo -V_ --> _cargo 1.66.1_
+
+  _$ rustc -V_ --> _rustc 1.66.1 (90743e729 2023-01-10) (built from a source tarball)_
+
+
+## C++: g++ compiler options for speed optimization
+
+
 
 
 
