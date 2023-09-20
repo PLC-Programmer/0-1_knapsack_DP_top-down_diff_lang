@@ -5,7 +5,7 @@ algorithm for different test cases and coded in different programming languages
 using the DataDraw Python library
 """
 #
-# Robert Sackmann, 2023-09-20a
+# Robert Sackmann, 2023-09-20b
 #
 #
 # sources:
@@ -341,7 +341,7 @@ class BarsDiagram:
         """
         d_d = self.d_d
 
-        diagram_title = 'C++: g++ optimization options, test case: 03_WEIGHTS100_Xu_Xu_et_al.in'
+        diagram_title = 'C++: selected g++ optimization options'
 
         import_str1 = 'import ' + import_str
         # print("import_str1 =", import_str1)
@@ -387,9 +387,14 @@ class BarsDiagram:
             d_d.bar(x=item, y=test_values_picks_on[i], color='#88AA88', width=16)
 
         # title:
-        d_d.settext(ptsize=20, adjust=(-45,0))
+        d_d.settext(ptsize=20, adjust=(-45,+9))
         d_d.plotlabels(titlepos=+20, title= diagram_title)
         d_d.settext(restore=True)
+
+        # test case as annotation:
+        d_d.settext(ptsize=14, color='#777')
+        label = 'test case: 03_WEIGHTS100_Xu_Xu_et_al.in'
+        d_d.label(0, y_max*1.06, label)  # 0 = test case #0 as x-position
 
         return d_d.svgresult()
 
