@@ -3,10 +3,10 @@
 2023-09-19/20...: a work in progress (WIP)
 
 First batch of programming languages:
-* Python: albeit slow, if possible this is my reference for calculating a correct result for an unknown test case
-* C++ (with the _g++ -Ofast_ optimization option as my best guess so far; gcc version 11.4.0 has been used here)
-* C# (release build)
-* Rust (release build)
+* **Python**: albeit slow, if possible this is my reference for calculating a correct result for an unknown test case
+* **C++** (with the _g++ -O3_ optimization option so far => move to _g++ -Ofast_; gcc version 11.4.0 has been used here)
+* **C#** (release build)
+* **Rust** (release build)
 
 DP = Dynamic Programming
 
@@ -88,7 +88,7 @@ Operating system:
 
 ## C++: g++ compiler options for speed optimization
 
-Apparently the choice, or absence, of options for (speed) optimization has a huge influence on the performance of a compiled C++ program with g++: https://gcc.gnu.org/onlinedocs/gcc-11.4.0/gcc/Optimize-Options.html
+Apparently the choice of options for (speed) optimization has a huge influence on the performance of a compiled C++ program with g++: https://gcc.gnu.org/onlinedocs/gcc-11.4.0/gcc/Optimize-Options.html
 
 Well, at least with the presented computational task here.
 
@@ -108,7 +108,4 @@ I experimented with these optimization options on test case _03_WEIGHTS100_Xu_Xu
 
 * -Ofast -- Disregard strict standards compliance.
 
-<diagram>
-
-
-
+![plot](./diagrams_svg/cpp_gpp_WEIGHTS100_Xu_Xu.svg)
