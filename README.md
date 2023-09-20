@@ -4,7 +4,7 @@
 
 First batch of programming languages:
 * **Python**: albeit slow, if possible this is my reference for calculating a correct result for an unknown test case
-* **C++** (with the _g++ -O3_ optimization option so far => move to _g++ -Ofast_; gcc version 11.4.0 has been used here)
+* **C++** (with the _g++ -O3_ optimization option; gcc version 11.4.0 has been used here)
 * **C#** (release build)
 * **Rust** (release build)
 
@@ -102,7 +102,7 @@ I experimented with these optimization options on test case _03_WEIGHTS100_Xu_Xu
 
 * -O2 -- Optimize even more.
 
-* -O3 -- Optimize yet more.
+* -O3 -- Optimize yet more  // this option has been used for all C++ results presented here; option -Ofast looks a little bit faster here; however I guess I should keep _standards compliance_ so far
 
 * -Os -- Optimize for size.
 
