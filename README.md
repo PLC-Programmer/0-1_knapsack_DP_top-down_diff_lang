@@ -102,7 +102,7 @@ I experimented with these optimization options on test case _03_WEIGHTS100_Xu_Xu
 
 * -O2 -- Optimize even more.
 
-* -O3 -- Optimize yet more  // this option has been used for all C++ results presented here; option -Ofast looks a little bit faster here; however I guess I should keep _standards compliance_ so far
+* -O3 -- Optimize yet more  // this option has been used for all C++ results presented here; option -Ofast looks a little bit faster here; however I guess I should keep _strict standards compliance_ for now
 
 * -Os -- Optimize for size.
 
