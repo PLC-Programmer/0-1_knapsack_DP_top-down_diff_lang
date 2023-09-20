@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" sds="23" width="600" height="550">
+<text x="128.33" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 128.33, 332)" >C++, picks on</text>
+<text x="195" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 195, 332)" >C++, picks off</text>
+<text x="261.67" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 261.67, 332)" >C#, picks on</text>
+<text x="328.33" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 328.33, 332)" >C#, picks off</text>
+<text x="395" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 395, 332)" >Rust, picks on</text>
+<text x="461.67" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 461.67, 332)" >Rust, picks off</text>
+<polyline points="100,310,100,50" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,310,500,310" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,249.25,500,249.25" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,188.50,500,188.50" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,127.76,500,127.76" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,67.01,500,67.01" stroke="#aaa" stroke-width="1.0"  />
+<text x="96" y="315.83" font-size="14pt" fill="#777"  text-anchor="end" >0</text>
+<text x="96" y="255.09" font-size="14pt" fill="#777"  text-anchor="end" >50</text>
+<text x="96" y="194.34" font-size="14pt" fill="#777"  text-anchor="end" >100</text>
+<text x="96" y="133.59" font-size="14pt" fill="#777"  text-anchor="end" >150</text>
+<text x="96" y="72.84" font-size="14pt" fill="#777"  text-anchor="end" >200</text>
+<text x="30" y="180" font-size="14pt" fill="#777"  text-anchor="middle" transform="rotate(-90, 30, 180)" >execution time [ms]</text>
+<rect x="124.33" y="50" width="18" height="260" fill="#88AA88" />
+<rect x="191" y="282.91" width="18" height="27.09" fill="#AB89AB" />
+<rect x="257.67" y="86.45" width="18" height="223.55" fill="#88AA88" />
+<rect x="324.33" y="240.75" width="18" height="69.25" fill="#AB89AB" />
+<rect x="391" y="113.18" width="18" height="196.82" fill="#88AA88" />
+<rect x="457.67" y="243.18" width="18" height="66.82" fill="#AB89AB" />
+<text x="55" y="30" font-size="20pt" fill="#777"  text-anchor="start" >Test case: 02_WEIGHTS24_Kreher-Stinson.in</text>
+
+</svg>
+

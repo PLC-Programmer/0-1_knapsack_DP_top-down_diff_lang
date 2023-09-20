@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" sds="23" width="600" height="550">
+<text x="105.94" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 105.94, 282)" >01_WEIGHTS4.in, picks on</text>
+<text x="127.81" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 127.81, 282)" >01_WEIGHTS4.in, picks off</text>
+<text x="149.69" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 149.69, 282)" >02_WEIGHTS24_Kreher_Stinson.in, picks on</text>
+<text x="171.56" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 171.56, 282)" >02_WEIGHTS24_Kreher_Stinson.in, picks off</text>
+<text x="193.44" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 193.44, 282)" >04_WEIGHTS_TODD_16.in, picks on</text>
+<text x="215.31" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 215.31, 282)" >04_WEIGHTS_TODD_16.in, picks off</text>
+<text x="237.19" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 237.19, 282)" >04_WEIGHTS_TODD_17.in, picks on</text>
+<text x="259.06" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 259.06, 282)" >04_WEIGHTS_TODD_17.in, picks off</text>
+<text x="280.94" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 280.94, 282)" >05_WEIGHTS_TODD_18.in, picks on</text>
+<text x="302.81" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 302.81, 282)" >05_WEIGHTS_TODD_18.in, picks off</text>
+<text x="324.69" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 324.69, 282)" >06_WEIGHTS_TODD_19.in, picks on</text>
+<text x="346.56" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 346.56, 282)" >06_WEIGHTS_TODD_19.in, picks off</text>
+<text x="368.44" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 368.44, 282)" >06_WEIGHTS_TODD_20.in, picks on</text>
+<text x="390.31" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 390.31, 282)" >06_WEIGHTS_TODD_20.in, picks off</text>
+<text x="412.19" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 412.19, 282)" >7.in, picks on</text>
+<text x="434.06" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 434.06, 282)" >7.in, picks off</text>
+<polyline points="100,260,100,50" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,260,450,260" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,234.07,450,234.07" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,208.15,450,208.15" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,182.22,450,182.22" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,156.30,450,156.30" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,130.37,450,130.37" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,104.44,450,104.44" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,78.52,450,78.52" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,52.59,450,52.59" stroke="#aaa" stroke-width="1.0"  />
+<text x="96" y="265.83" font-size="14pt" fill="#777"  text-anchor="end" >0</text>
+<text x="96" y="239.91" font-size="14pt" fill="#777"  text-anchor="end" >20</text>
+<text x="96" y="213.98" font-size="14pt" fill="#777"  text-anchor="end" >40</text>
+<text x="96" y="188.06" font-size="14pt" fill="#777"  text-anchor="end" >60</text>
+<text x="96" y="162.13" font-size="14pt" fill="#777"  text-anchor="end" >80</text>
+<text x="96" y="136.20" font-size="14pt" fill="#777"  text-anchor="end" >100</text>
+<text x="96" y="110.28" font-size="14pt" fill="#777"  text-anchor="end" >120</text>
+<text x="96" y="84.35" font-size="14pt" fill="#777"  text-anchor="end" >140</text>
+<text x="96" y="58.43" font-size="14pt" fill="#777"  text-anchor="end" >160</text>
+<text x="30" y="155" font-size="14pt" fill="#777"  text-anchor="middle" transform="rotate(-90, 30, 155)" >execution time [ms]</text>
+<rect x="102.94" y="252.22" width="16" height="7.78" fill="#88AA88" />
+<rect x="124.81" y="260" width="16" height="0" fill="#AB89AB" />
+<rect x="146.69" y="50" width="16" height="210" fill="#88AA88" />
+<rect x="168.56" y="188.70" width="16" height="71.30" fill="#AB89AB" />
+<rect x="190.44" y="230.19" width="16" height="29.81" fill="#88AA88" />
+<rect x="212.31" y="260" width="16" height="0" fill="#AB89AB" />
+<rect x="234.19" y="199.07" width="16" height="60.93" fill="#88AA88" />
+<rect x="256.06" y="260" width="16" height="0" fill="#AB89AB" />
+<rect x="277.94" y="147.22" width="16" height="112.78" fill="#88AA88" />
+<rect x="299.81" y="260" width="16" height="0" fill="#AB89AB" />
+<rect x="321.69" y="nan" width="16" height="nan" fill="#88AA88" />
+<rect x="343.56" y="258.70" width="16" height="1.30" fill="#AB89AB" />
+<rect x="365.44" y="nan" width="16" height="nan" fill="#88AA88" />
+<rect x="387.31" y="257.41" width="16" height="2.59" fill="#AB89AB" />
+<rect x="409.19" y="nan" width="16" height="nan" fill="#88AA88" />
+<rect x="431.06" y="nan" width="16" height="nan" fill="#AB89AB" />
+<text x="55" y="30" font-size="20pt" fill="#777"  text-anchor="start" >Rust</text>
+<text x="318.75" y="44.50" font-size="12pt" fill="#99f"  text-anchor="start" ><tspan>test(s) with no valid result</tspan><tspan x="318.75" dy="1.05em">(timeout, not enough memory):</tspan><tspan x="318.75" dy="1.05em">06_WEIGHTS_TODD_19.in, picks on</tspan><tspan x="318.75" dy="1.05em">06_WEIGHTS_TODD_20.in, picks on</tspan><tspan x="318.75" dy="1.05em">7.in, picks on</tspan><tspan x="318.75" dy="1.05em">7.in, picks off</tspan></text>
+
+</svg>
+
