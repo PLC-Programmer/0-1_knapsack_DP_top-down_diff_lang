@@ -14,7 +14,7 @@ Important things first (with Python included see below at https://github.com/PLC
 
 ![plot](./diagrams_svg/lang1_WEIGHTS100_Xu_Xu_ex_Python.svg)
  
-This is a spin-off project from this one: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos, where only Algo 3 is used here: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos#algo-3----15-winner-dp-top-down 
+This project is a spin-off from this project: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos, where only Algo 3 is used here: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos#algo-3----15-winner-dp-top-down 
   
 
 ## The odd case of the implementation with C++
