@@ -10,7 +10,7 @@ First batch of programming languages:
 
 DP = Dynamic Programming
 
-Important things first (with Python included see below):
+Important things first (with Python included see below at https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/blob/main/README.md#diagrams-of-the-individual-programming-languages):
 
 ![plot](./diagrams_svg/lang1_WEIGHTS100_Xu_Xu_ex_Python.svg)
  
