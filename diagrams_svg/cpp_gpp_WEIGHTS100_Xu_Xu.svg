@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" sds="23" width="600" height="550">
+<text x="124.17" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 124.17, 282)" >g++, g++ -O0, picks on</text>
+<text x="182.50" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 182.50, 282)" >g++ -O, O1, picks on</text>
+<text x="240.83" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 240.83, 282)" >g++ -Os, picks on</text>
+<text x="299.17" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 299.17, 282)" >g++ -O2, picks on</text>
+<text x="357.50" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 357.50, 282)" >g++ -O3, picks on</text>
+<text x="415.83" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 415.83, 282)" >g++ -Ofast, picks on</text>
+<polyline points="100,260,100,50" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,260,450,260" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,235.43,450,235.43" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,210.85,450,210.85" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,186.28,450,186.28" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,161.71,450,161.71" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,137.14,450,137.14" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,112.56,450,112.56" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,87.99,450,87.99" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,63.42,450,63.42" stroke="#aaa" stroke-width="1.0"  />
+<text x="96" y="265.83" font-size="14pt" fill="#777"  text-anchor="end" >0</text>
+<text x="96" y="241.26" font-size="14pt" fill="#777"  text-anchor="end" >2000</text>
+<text x="96" y="216.69" font-size="14pt" fill="#777"  text-anchor="end" >4000</text>
+<text x="96" y="192.11" font-size="14pt" fill="#777"  text-anchor="end" >6000</text>
+<text x="96" y="167.54" font-size="14pt" fill="#777"  text-anchor="end" >8000</text>
+<text x="96" y="142.97" font-size="14pt" fill="#777"  text-anchor="end" >10000</text>
+<text x="96" y="118.40" font-size="14pt" fill="#777"  text-anchor="end" >12000</text>
+<text x="96" y="93.82" font-size="14pt" fill="#777"  text-anchor="end" >14000</text>
+<text x="96" y="69.25" font-size="14pt" fill="#777"  text-anchor="end" >16000</text>
+<text x="30" y="155" font-size="14pt" fill="#777"  text-anchor="middle" transform="rotate(-90, 30, 155)" >execution time [ms]</text>
+<rect x="121.17" y="50" width="16" height="210" fill="#88AA88" />
+<rect x="179.50" y="163.59" width="16" height="96.41" fill="#88AA88" />
+<rect x="237.83" y="166.68" width="16" height="93.32" fill="#88AA88" />
+<rect x="296.17" y="170.48" width="16" height="89.52" fill="#88AA88" />
+<rect x="354.50" y="211.24" width="16" height="48.76" fill="#88AA88" />
+<rect x="412.83" y="216.36" width="16" height="43.64" fill="#88AA88" />
+<text x="55" y="30" font-size="20pt" fill="#777"  text-anchor="start" >C++: g++ optimization options, test case: 03_WEIGHTS100_Xu_Xu_et_al.in</text>
+
+</svg>
+
