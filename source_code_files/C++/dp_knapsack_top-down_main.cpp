@@ -1,13 +1,14 @@
 // dp_knapsack_top-down_main.cpp
 //
-// Robert Sackmann, 2023-09-16
+// Robert Sackmann, 2023-09-21
 //
 // test: OK
 // environment: $ uname -a --> Linux ... 6.2.0-32-generic #32~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug 18 10:40:13 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
 //
 //
 // compile: $ g++ -O3 ./dp_knapsack_top-down_main.cpp -o dp_knapsack_top-down_main
-// run:     $ ./dp_knapsack_top-down_main [no_picks, nopicks, picks_off, picksoff] [20]
+// run:     $ ./dp_knapsack_top-down_main [no_picks, nopicks, picks_off, picksoff] [20] [no_timer, notimer, timer_off, timeroff]
+//
 //
 // to do:
 //    -
@@ -15,27 +16,29 @@
 //
 //
 //
-// 2023-09-16: execution times with picks table activated: $ g++ ./dp_knapsack_top-down_main.cpp -o dp_knapsack_top-down_main
-//     01_WEIGHTS4.in                     0.1ms
-//     02_WEIGHTS24_Kreher&Stinson.in     214ms
-//     03_WEIGHTS100_Xu_Xu_et_al.in      3511ms <--- 17071ms with g++ => 7631ms with g++ -Os => 3487ms with g++ -O3 ==> -79.6%
-//     04_WEIGHTS_TODD_16.in              238ms
-//     04_WEIGHTS_TODD_17.in              489ms
-//     05_WEIGHTS_TODD_18.in             1111ms
+// 2023-09-21: execution times (Total number of CPU-milliseconds that the process spent in user mode) with picks table activated:
+//   $ bash shell script "exe_times_statistics_for_multiple_test_cases" (10x) with test case files (*.in) located in directory: ./test_cases
+//     01_WEIGHTS4.in                       0ms
+//     02_WEIGHTS24_Kreher&Stinson.in     109ms
+//     03_WEIGHTS100_Xu_Xu_et_al.in      3583ms (<--- 17071ms with g++ => 7631ms with g++ -Os => 3487ms with g++ -O3 ==> -79.6%; all measured with C++ source code timer)
+//     04_WEIGHTS_TODD_16.in               30ms
+//     04_WEIGHTS_TODD_17.in               84ms
+//     05_WEIGHTS_TODD_18.in              181ms
 //     06_WEIGHTS_TODD_19.in              -----  <not enough memory in my computer>
 //     06_WEIGHTS_TODD_20.in              -----  <not enough memory in my computer>
-//     7.in                              <stopped manually after many minutes>
+//     7.in                               -----  <stopped manually after many minutes>
 //
-// 2023-09-16: execution times without picks table activated: $ g++ ./dp_knapsack_top-down_main.cpp -o dp_knapsack_top-down_main
-//     01_WEIGHTS4.in                   0.014ms
-//     02_WEIGHTS24_Kreher&Stinson.in    22.3ms
-//     03_WEIGHTS100_Xu_Xu_et_al.in      2900ms <--- 14876ms with g++ => 7256ms with g++ -Os => 2896ms with g++ -O3
-//     04_WEIGHTS_TODD_16.in             0.11ms
-//     04_WEIGHTS_TODD_17.in              0.2ms
-//     05_WEIGHTS_TODD_18.in              0.3ms
-//     06_WEIGHTS_TODD_19.in              0.8ms
-//     06_WEIGHTS_TODD_20.in              1.5ms
-//     7.in                                ----  <see above: not tested>
+// 2023-09-21: execution times (Total number of CPU-milliseconds that the process spent in user mode) without picks table activated:
+//   $ bash shell script "exe_times_statistics_for_multiple_test_cases" (10x) with test case files (*.in) located in directory: ./test_cases
+//     01_WEIGHTS4.in                       0ms
+//     02_WEIGHTS24_Kreher&Stinson.in      20ms
+//     03_WEIGHTS100_Xu_Xu_et_al.in      2896ms (<--- 14876ms with g++ => 7256ms with g++ -Os => 2896ms with g++ -O3; all measured with C++ source code timer)
+//     04_WEIGHTS_TODD_16.in                0ms
+//     04_WEIGHTS_TODD_17.in                0ms
+//     05_WEIGHTS_TODD_18.in                0ms
+//     06_WEIGHTS_TODD_19.in                0ms
+//     06_WEIGHTS_TODD_20.in                0ms
+//     7.in                               -----  <see above: not tested>
 
 
 #include <chrono>
@@ -53,6 +56,9 @@
 
 
 using namespace std;
+
+using std::chrono::high_resolution_clock;
+using std::chrono::duration;
 
 
 const char* INPUTFILES = "./";
@@ -98,7 +104,8 @@ int main(int argc, char* argv[]) {
 
 
     bool picks_on = true;  // default: with picks table activated
-
+    bool exe_timer_on = true;  // default: with internal execution timer activated
+    
     long long TIME_LIMIT = 1200000;  // = 20 min default setting
 
     if (argc > 1) {
@@ -109,14 +116,23 @@ int main(int argc, char* argv[]) {
         {
             picks_on = false;  // no picks table to be activated
         }
-
+        
         if (argv[2] != NULL)
         {
             long long TIME_LIMIT_a = stoi(argv[2]) * 60000;  // user set timeout waiting time in [min] --> milliseconds
             TIME_LIMIT = max(TIME_LIMIT_MIN, TIME_LIMIT_a);  // have a minimum of 1 minute
         }
-    }
 
+        if (strcmp(argv[3], "no_timer") == 0 ||
+            strcmp(argv[3], "notimer") == 0 ||
+            strcmp(argv[3], "timer_off") == 0 ||
+            strcmp(argv[3], "timeroff") == 0)
+        {
+            exe_timer_on = false;  // no internal execution timer to be activated
+        } 
+        
+    }
+    
 
     char cwd[PATH_MAX];
     DIR *d;
@@ -170,8 +186,6 @@ int main(int argc, char* argv[]) {
     printf("\n\nAnswer of -1 means that no optimal value is known or no optimal value could be computed within the time limit.\n");
 
 
-    using std::chrono::high_resolution_clock;
-    using std::chrono::duration;
 
 
     // changes: loop over input files with test cases:
@@ -223,20 +237,35 @@ int main(int argc, char* argv[]) {
         // Dynamic Programming top-down (recursive) procedure:
 
         if (picks_on == true) {
-            auto t1 = high_resolution_clock::now();
-            knapsack_recursive td_knaps(w, v, T, TIME_LIMIT);
-            auto t2 = high_resolution_clock::now();
-            duration<double, std::milli> time_dp_top_down = t2 - t1;
-
-            cout << "  Dynamic programming top-down (recursive) was completed with answer = " << td_knaps.result << " and execution time = " << time_dp_top_down.count() << "ms" << endl;
+            if (exe_timer_on == true ) {               
+                auto t1 = high_resolution_clock::now();
+                knapsack_recursive td_knaps(w, v, T, TIME_LIMIT);
+                auto t2 = high_resolution_clock::now();
+                duration<double, std::milli> time_dp_top_down = t2 - t1;
+                
+                cout << "  Dynamic programming top-down (recursive) was completed with answer = " << td_knaps.result << " and execution time = " << time_dp_top_down.count() << "ms" << endl;
+            }
+            else {
+                knapsack_recursive td_knaps(w, v, T, TIME_LIMIT);
+                
+                cout << "  Dynamic programming top-down (recursive) was completed with answer = " << td_knaps.result << endl;
+            }
         }
-        else {
-            auto t1 = high_resolution_clock::now();
-            knapsack_recursive_no_picks td_knaps(w, v, T, TIME_LIMIT);
-            auto t2 = high_resolution_clock::now();
-            duration<double, std::milli> time_dp_top_down = t2 - t1;
 
-            cout << "  Dynamic programming top-down (recursive) was completed with answer = " << td_knaps.result << " and execution time = " << time_dp_top_down.count() << "ms" << endl;
+        else {
+            if (exe_timer_on == true ) {               
+                auto t1 = high_resolution_clock::now();
+                knapsack_recursive_no_picks td_knaps(w, v, T, TIME_LIMIT);
+                auto t2 = high_resolution_clock::now();
+                duration<double, std::milli> time_dp_top_down = t2 - t1;
+                
+                cout << "  Dynamic programming top-down (recursive) was completed with answer = " << td_knaps.result << " and execution time = " << time_dp_top_down.count() << "ms" << endl;
+            }
+            else {
+                knapsack_recursive_no_picks td_knaps(w, v, T, TIME_LIMIT);
+
+                cout << "  Dynamic programming top-down (recursive) was completed with answer = " << td_knaps.result << endl;
+            }
         }
 
         cout << "  The expected maximum value of the optimal knapsack is " << optimal_profit << endl;
