@@ -1,0 +1,92 @@
+#!/bin/bash
+# exe_times_statistics_for_multiple_test_cases (755)
+#
+# Robert Sackmann, 2023-09-21
+#
+# test: OK
+# environment: $ uname -a --> Linux ... 6.2.0-32-generic #32~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug 18 10:40:13 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+#
+# timer run for the C++ program for example: $ ./exe_times_statistics_for_multiple_test_cases dp_knapsack_top-down_main pickson 20 timeroff
+#                                                                                             $1                        $2      $3 $4
+# options used here:
+#   $1 name of program to be timed
+#   $2 picks table activated
+#   $3 timeout timer time in minutes
+#   $4 internal execution timer off
+#
+#
+# !! PLACE ONLY TESTABLE TEST CASES INTO DIRECTORY: ./test_cases !! So, no test cases that will lead to timeouts or not enough memory, respectively.
+#
+#
+# example command here to get the "Total number of CPU-seconds that the process spent in user mode": $ /usr/bin/time -f '%U' ./dp_knapsack_top-down_main pickson 20 timeroff
+# for the time command see: https://www.man7.org/linux/man-pages/man1/time.1.html (*)
+#
+#
+#  to do:
+#    - 
+#    - 
+
+ROUNDS=10  # n rounds for one test case
+
+TESTDIR="./test_cases"
+
+RESULTFILE="./exe_times_statistics_for_multiple_test_cases_results.txt"
+
+
+CMD="/usr/bin/time -f '%U' ./"$1" "$2" "$3" "$4
+echo "command to be run: "$CMD
+echo
+echo "directory with test cases: "$TESTDIR
+echo | tee -a $RESULTFILE
+echo "!!DO NOT SAVE UNTESTABLE INPUT FILES (TIMEOUT, NOT ENOUGH MEMORY) INTO THE TEST DIRECTORY!! THIS WOULD CAUSE WRONG TEST RESULTS!" | tee -a $RESULTFILE
+echo
+
+# list all files in test dir:
+LIST=$(ls $TESTDIR/*.in)
+
+echo " " >> $RESULTFILE
+date >> $RESULTFILE
+echo "command to be run: "$CMD >> $RESULTFILE
+
+echo "input files with test cases:" | tee -a $RESULTFILE
+for i in $LIST; do
+    echo "  "$i | tee -a $RESULTFILE
+done
+
+echo
+echo "$ROUNDS rounds for each test case will start now..."
+
+# delete all test cases in cwd:
+rm *.in 2> /dev/null
+
+for i in $LIST; do
+    
+    # copy test case i from TESTDIR into cwd:
+    cp $i $PWD
+
+    SUM=0  # milliseconds
+    
+    for j in $(seq 1 $ROUNDS); do
+        # see more details in script: exe_times_statistics_for_one_test_case_in_cwd
+        read USER < <({ $CMD 1>&3; } 3>&2 2>&1)    
+        read USER2 < <({ echo $USER | tr --delete "\'"; })
+        read USER3 < <({ echo $USER2 | tr --delete "\."; })
+        USER4=$((10#$USER3))    
+        USER5=$(($USER4 * 10))  # unit of USER4 is milliseconds
+        
+        SUM=$(($SUM+$USER5))
+
+    done
+    
+    echo "  =======================" >> $RESULTFILE
+    echo "  test case: "$i >> $RESULTFILE
+    echo "    SUM = $SUM [milliseconds]" >> $RESULTFILE
+    echo "    rounds = $ROUNDS" >> $RESULTFILE
+    
+    MEDIAN=$(($SUM/$ROUNDS))
+    echo "    MEDIAN = $MEDIAN: total number of CPU-milliseconds that the process spent in user mode" >> $RESULTFILE
+
+    rm *.in 2> /dev/null
+done
+
+# end of exe_times_statistics_for_multiple_test_cases

@@ -1,0 +1,69 @@
+#!/bin/bash
+# exe_times_statistics_for_one_test_case_in_cwd (755)
+#
+# Robert Sackmann, 2023-09-20
+#
+# test: OK
+# environment: $ uname -a --> Linux ... 6.2.0-32-generic #32~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug 18 10:40:13 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+#
+# timer run for the C++ program for example: $ ./exe_times_statistics_for_one_test_case_in_cwd dp_knapsack_top-down_main pickson 20 timeroff
+#                                                                                              $1                        $2      $3 $4
+# options used here:
+#   $1 name of program to be timed
+#   $2 picks table activated
+#   $3 timeout timer time in minutes
+#   $4 internal execution timer off
+#
+# example command here to get the "Total number of CPU-seconds that the process spent in user mode": $ /usr/bin/time -f '%U' ./dp_knapsack_top-down_main pickson 20 timeroff
+# for the time command see: https://www.man7.org/linux/man-pages/man1/time.1.html (*)
+#
+#
+#  to do:
+#    - 
+#    - 
+
+
+ROUNDS=10  # n rounds for one test case
+
+CMD="/usr/bin/time -f '%U' ./"$1" "$2" "$3" "$4
+
+echo $CMD
+echo "$ROUNDS rounds this test case will do now..."
+
+
+SUM=0  # milliseconds
+
+
+for i in $(seq 1 $ROUNDS); do
+
+    read USER < <({ $CMD 1>&3; } 3>&2 2>&1)
+    # outout of time command goes to stderr (*)
+    # redirect stdout/1 to a file descriptor 3; then redirect file descriptor 3 to stderr/2 and stderr/2 to stdout/1 into variable USER
+    # echo "  USER = $USER [seconds]"  # USER = '0.12' --> there's no floating-point arithmetic in bash
+    
+    # get rid of ' chars:
+    read USER2 < <({ echo $USER | tr --delete "\'"; })
+    # echo "  USER2 = $USER2"  # USER2 = 0.12
+    
+    # get rid of decimal dot:
+    read USER3 < <({ echo $USER2 | tr --delete "\."; })
+    # echo "  USER3 = $USER3"  # USER3 = 012
+    
+    # convert string to integer number:
+    USER4=$((10#$USER3))
+    # echo "  USER4 = $USER4"  # USER4 = 12
+    
+    USER5=$(($USER4 * 10))  # unit of USER4 is milliseconds
+    # echo "  USER5 = $USER5"  # USER5 = 120
+    
+    SUM=$(($SUM+$USER5))
+
+done
+
+echo "======================="
+echo "SUM = $SUM [milliseconds]"
+
+MEDIAN=$(($SUM/$ROUNDS))
+echo "median = $MEDIAN [milliseconds]"
+
+# end of exe_times_statistics_for_one_test_case_in_cwd
