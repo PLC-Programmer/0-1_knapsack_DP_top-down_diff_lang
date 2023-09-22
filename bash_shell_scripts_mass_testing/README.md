@@ -42,7 +42,7 @@ This seemingly odd mechanism of these scripts leave the computer programs in the
                                           
 However, I had to add the option (as a second or third user argument, respectively) to not use the internal execution timer: [no_timer, notimer, timer_off, timeroff]
 
-2023-09-21: only the C++ program has this third option for now...
+2023-09-22: only the Python and C++ programs have this third option for now
  
 \
 Of course, these test scripts could have also been implemented in **Python** for example to get better and easier control of the testing procedure (bash doesn't support floating point arithmetic for example) and to produce a fancy file with the test statistics for efficient, further data processing (in JSON/JavaScript object notation for example).
