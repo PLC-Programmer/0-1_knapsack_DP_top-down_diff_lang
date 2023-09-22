@@ -1,7 +1,13 @@
 """
+rev.2023-mm-dd
 Knapsack: dynamic programming: top-down (recursive)
-XXXXXX program : execution times [ms] for various test cases
-nan (not a number): not enough memory or timeout exceeded
+XXXXXX program: execution times [ms]
+  ("Total number of CPU-seconds that the process spent in user mode")
+- nan (not a number): not enough memory or timeout exceeded
+Using the bash script with the Linux time command:
+  - exe_times_statistics_for_multiple_test_cases
+  - 10 rounds each test case
+  - internal timer off: [no_timer, notimer, timer_off, timeroff]
 """
 
 picks_on = [
