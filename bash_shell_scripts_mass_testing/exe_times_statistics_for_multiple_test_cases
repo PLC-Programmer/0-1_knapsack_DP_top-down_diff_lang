@@ -1,18 +1,16 @@
 #!/bin/bash
 # exe_times_statistics_for_multiple_test_cases (755)
 #
-# Robert Sackmann, 2023-09-21
+# Robert Sackmann, 2023-09-22
 #
 # test: OK
 # environment: $ uname -a --> Linux ... 6.2.0-32-generic #32~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug 18 10:40:13 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
 #
-# timer run for the C++ program for example: $ ./exe_times_statistics_for_multiple_test_cases dp_knapsack_top-down_main pickson 20 timeroff
-#                                                                                             $1                        $2      $3 $4
-# options used here:
-#   $1 name of program to be timed
-#   $2 picks table activated
-#   $3 timeout timer time in minutes
-#   $4 internal execution timer off
+# timer run for the:
+#   C++ program:    $ ./exe_times_statistics_for_multiple_test_cases dp_knapsack_top-down_main pickson 20 timeroff
+#                                                                    $1                        $2      $3 $4
+#   Python program: $ ./exe_times_statistics_for_multiple_test_cases python3 dp_knapsack_top-down.py pickson timeroff
+#                                                                    $1      $2                      $3      $4
 #
 #
 # !! PLACE ONLY TESTABLE TEST CASES INTO DIRECTORY: ./test_cases !! So, no test cases that will lead to timeouts or not enough memory, respectively.
@@ -23,8 +21,8 @@
 #
 #
 #  to do:
-#    - 
-#    - 
+#    -
+#    -
 
 ROUNDS=10  # n rounds for one test case
 
@@ -33,7 +31,13 @@ TESTDIR="./test_cases"
 RESULTFILE="./exe_times_statistics_for_multiple_test_cases_results.txt"
 
 
-CMD="/usr/bin/time -f '%U' ./"$1" "$2" "$3" "$4
+if [ $1 = "python3" ]; then
+    CMD="/usr/bin/time -f '%U' "$1" "$2" "$3" "$4
+else
+    CMD="/usr/bin/time -f '%U' ./"$1" "$2" "$3" "$4
+fi
+
+
 echo "command to be run: "$CMD
 echo
 echo "directory with test cases: "$TESTDIR
@@ -60,29 +64,29 @@ echo "$ROUNDS rounds for each test case will start now..."
 rm *.in 2> /dev/null
 
 for i in $LIST; do
-    
+
     # copy test case i from TESTDIR into cwd:
     cp $i $PWD
 
     SUM=0  # milliseconds
-    
+
     for j in $(seq 1 $ROUNDS); do
         # see more details in script: exe_times_statistics_for_one_test_case_in_cwd
-        read USER < <({ $CMD 1>&3; } 3>&2 2>&1)    
+        read USER < <({ $CMD 1>&3; } 3>&2 2>&1)
         read USER2 < <({ echo $USER | tr --delete "\'"; })
         read USER3 < <({ echo $USER2 | tr --delete "\."; })
-        USER4=$((10#$USER3))    
+        USER4=$((10#$USER3))
         USER5=$(($USER4 * 10))  # unit of USER4 is milliseconds
-        
+
         SUM=$(($SUM+$USER5))
 
     done
-    
+
     echo "  =======================" >> $RESULTFILE
     echo "  test case: "$i >> $RESULTFILE
     echo "    SUM = $SUM [milliseconds]" >> $RESULTFILE
     echo "    rounds = $ROUNDS" >> $RESULTFILE
-    
+
     MEDIAN=$(($SUM/$ROUNDS))
     echo "    MEDIAN = $MEDIAN: total number of CPU-milliseconds that the process spent in user mode" >> $RESULTFILE
 
