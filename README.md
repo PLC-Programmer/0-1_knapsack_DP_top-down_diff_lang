@@ -1,6 +1,6 @@
 # The 0/1 knapsack problem with dynamic programming with the top-down (recursive) algorithm: comparing execution speeds of programming languages
 
-2023-09-19/20/22...: a work in progress (WIP)
+2023-09-19/20/22/23...: a work in progress (WIP)
 
 First batch of programming languages:
 * **Python**: albeit slow, if possible this is my reference for calculating a correct result for an unknown test case
@@ -43,14 +43,15 @@ Since the other test cases can be computed much faster (if possible in my enviro
 
 ![plot](./diagrams_svg/python.svg)
 
-<rev.2023-09-23, Python: mass tested with script: 10 rounds for each test case, arithmetic mean>
+<rev.2023-09-23, Python: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
 ![plot](./diagrams_svg/cpp.svg)
 
 <rev.2023-09-22, C++: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command; g++ -O3 compiled>
 
-
 ![plot](./diagrams_svg/cs.svg)
+
+<rev.2023-09-23, C#: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
 ![plot](./diagrams_svg/rust.svg)
 
