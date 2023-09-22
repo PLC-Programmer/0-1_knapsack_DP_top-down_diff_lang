@@ -112,3 +112,28 @@ I experimented with these optimization options on test case _03_WEIGHTS100_Xu_Xu
 * -Ofast -- Disregard strict standards compliance.
 
 ![plot](./diagrams_svg/cpp_gpp_WEIGHTS100_Xu_Xu.svg)
+
+ 
+## Case testing for execution times
+
+So far I have implemented three simple options:
+
+(a) running with internal timers (inside source code):
+
+...(examples how to run programs)
+
+This option is probably not really useful for meaningful test statistics.
+
+Concepts differ from one programming language to the other, at least with my implementations. However, it's useful in my opinion to compare one test case with another **processed with a program written in the same programming language**. This is why this is the original timing implementation and will stay as a feature: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos
+
+\
+(b) bash script for **one individual test case** file (*.in) in the current working directory (cwd):  _exe_times_statistics_for_one_test_case_in_cwd_
+
+...(examples how to run programs)
+
+Also see: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/blob/main/bash_shell_scripts_mass_testing/readme.txt
+
+\
+(c) bash script for **mass testing** of test cases (*.in) saved in directory _./test_cases_:  _exe_times_statistics_for_multiple_test_cases_
+
+...(examples how to run programs)
