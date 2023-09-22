@@ -66,7 +66,7 @@ Operating system:
 
 * _$ uname -a_ --> _Linux ... 6.2.0-32-generic #32~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug 18 10:40:13 UTC 2 x86_64 x86_64 x86_64_
 
-### Used compiler or builder version, respectively
+### Used compiler or builder versions, respectively
 
 * **Python**: _$ python3 -V -V_ --> _Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]_
 
@@ -131,7 +131,7 @@ Concepts differ from one programming language to the other, at least with my imp
 
 ...(examples how to run programs)
 
-Also see: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/blob/main/bash_shell_scripts_mass_testing/readme.txt
+Also see: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/bash_shell_scripts_mass_testing
 
 \
 (c) bash script for **mass testing** of test cases (*.in) saved in directory _./test_cases_:  _exe_times_statistics_for_multiple_test_cases_
