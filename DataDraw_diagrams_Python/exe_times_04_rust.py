@@ -25,7 +25,7 @@ picks_on = [
 picks_off = [
     ('01_WEIGHTS4.in', 0),
     ('02_WEIGHTS24_Kreher_Stinson.in', 40),
-    ('03_WEIGHTS100_Xu_Xu_et_al.in', 6907,
+    ('03_WEIGHTS100_Xu_Xu_et_al.in', 6907),
     ('04_WEIGHTS_TODD_16.in', 0),
     ('04_WEIGHTS_TODD_17.in', 0),
     ('05_WEIGHTS_TODD_18.in', 0),
