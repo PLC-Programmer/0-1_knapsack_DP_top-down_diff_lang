@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   sds="23"
+   width="633.60938"
+   height="426.29483"
+   version="1.1"
+   id="svg29"
+   sodipodi:docname="lang1_WEIGHTS100_Xu_Xu_ex_Python_resized.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs29" />
+  <sodipodi:namedview
+     id="namedview29"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.0672727"
+     inkscape:cx="284.19085"
+     inkscape:cy="265.32542"
+     inkscape:window-width="2560"
+     inkscape:window-height="1351"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg29" />
+  <text
+     x="319.18732"
+     y="120.95559"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text1">C++, picks on</text>
+  <text
+     x="362.04196"
+     y="69.883408"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text2">C++, picks off</text>
+  <text
+     x="404.89661"
+     y="18.811222"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text3">C#, picks on</text>
+  <text
+     x="447.74481"
+     y="-32.2533"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text4">C#, picks off</text>
+  <text
+     x="490.59949"
+     y="-83.325485"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text5">Rust, picks on</text>
+  <text
+     x="533.45416"
+     y="-134.39767"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text6">Rust, picks off</text>
+  <polyline
+     points="100,310,100,50"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline6"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,310,500,310"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline7"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,281.08,500,281.08"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline8"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,252.15,500,252.15"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline9"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,223.23,500,223.23"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline10"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,194.30,500,194.30"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline11"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,165.38,500,165.38"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline12"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,136.45,500,136.45"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline13"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,107.53,500,107.53"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline14"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,78.61,500,78.61"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline15"
+     transform="translate(-15.817709,-9.7395838)" />
+  <text
+     x="80.182289"
+     y="306.09039"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text15">0</text>
+  <text
+     x="80.182289"
+     y="277.17041"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text16">1000</text>
+  <text
+     x="80.182289"
+     y="248.24043"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text17">2000</text>
+  <text
+     x="80.182289"
+     y="219.32042"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text18">3000</text>
+  <text
+     x="80.182289"
+     y="190.40042"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text19">4000</text>
+  <text
+     x="80.182289"
+     y="161.47043"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text20">5000</text>
+  <text
+     x="80.182289"
+     y="132.55042"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text21">6000</text>
+  <text
+     x="80.182289"
+     y="103.62041"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text22">7000</text>
+  <text
+     x="80.182289"
+     y="74.700417"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text23">8000</text>
+  <text
+     x="-170.26042"
+     y="14.182291"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="middle"
+     transform="rotate(-90)"
+     id="text24">execution time [ms]</text>
+  <rect
+     x="108.51229"
+     y="196.62042"
+     width="18"
+     height="103.64"
+     fill="#88aa88"
+     id="rect24" />
+  <rect
+     x="175.1823"
+     y="216.50043"
+     width="18"
+     height="83.760002"
+     fill="#ab89ab"
+     id="rect25" />
+  <rect
+     x="241.85231"
+     y="40.260418"
+     width="18"
+     height="260"
+     fill="#88aa88"
+     id="rect26" />
+  <rect
+     x="308.51227"
+     y="53.570419"
+     width="18"
+     height="246.69"
+     fill="#ab89ab"
+     id="rect27" />
+  <rect
+     x="375.18228"
+     y="64.730415"
+     width="18"
+     height="235.53"
+     fill="#88aa88"
+     id="rect28" />
+  <rect
+     x="441.85229"
+     y="100.48042"
+     width="18"
+     height="199.78"
+     fill="#ab89ab"
+     id="rect29" />
+  <text
+     x="39.182293"
+     y="20.260416"
+     font-size="26.6667px"
+     fill="#777777"
+     text-anchor="start"
+     id="text29">Test case: 03_WEIGHTS100_Xu_Xu_et_al.in</text>
+</svg>
