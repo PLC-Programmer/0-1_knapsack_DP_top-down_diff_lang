@@ -23,13 +23,15 @@ This project is a spin-off from this project: https://github.com/PLC-Programmer/
 
 While C++ is looking good in above diagram, and as many would expect, this test case, which is very different in nature, might come as a shock even:
 
-![plot](./diagrams_svg/lang1_WEIGHTS_TODD_18_ex_Python.svg)
+![plot](./diagrams_svg_resized/lang1_WEIGHTS_TODD_18_ex_Python_resized.svg)
 
 <rev.2023-09-25: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
-Also with this test case, C++ is also not looking so good with an activated picks table (for backtracking the optimal result if desired):
+However, with the (famous) 02_WEIGHTS24_Kreher&Stinson.in test case (https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos#02_weights24_kreherstinsonin) the program in C++ can compare in speed with its counterpart in Rust with an activated picks table (for backtracking the optimal result if desired):
 
-![plot](./diagrams_svg/lang1_WEIGHTS24_Kreher_Stinson.svg)
+![plot](./diagrams_svg_resized/lang1_WEIGHTS24_Kreher_Stinson_resized.svg)
+
+<rev.2023-09-25: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
 In the C++ program I use the **vector data type** for the **picks table** in the recursive function, however in Rust I do the same.
 
