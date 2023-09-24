@@ -1,6 +1,6 @@
 // main.rs
 //
-// Robert Sackmann, 2023-09-13
+// Robert Sackmann, 2023-09-24
 //
 // test: OK
 // environment: $ uname -a --> Linux ... 6.2.0-32-generic #32~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug 18 10:40:13 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
@@ -8,42 +8,39 @@
 //
 // DEBUG:
 //   build: ./dp_knapsack_top-down $ cargo build
-//   run:   ./dp_knapsack_top-down $ ./target/debug/dp_knapsack_top-down [no_picks, nopicks, picks_off, picksoff]
-//   
+//   run:   ./dp_knapsack_top-down $ ./target/debug/dp_knapsack_top-down [no_picks, nopicks, picks_off, picksoff] [no_timer, notimer, timer_off, timeroff]
+//
 // RELEASE:
 //   build: ./dp_knapsack_top-down $ cargo build -r -v  # -r release, -v verbose
-//   run:   ./dp_knapsack_top-down $ ./target/release/dp_knapsack_top-down [no_picks, nopicks, picks_off, picksoff]
-//          have test case files (*.in) in same directory as the Cargo.toml file!
-//                                   
+//   run:   ./dp_knapsack_top-down $ ./target/release/dp_knapsack_top-down [no_picks, nopicks, picks_off, picksoff] [no_timer, notimer, timer_off, timeroff]
+//          have test case files (*.in) in same directory as the Cargo.toml file
+//
 //
 // to do:
-//    - 
+//    -
 //
 //
+// 2023-09-24: execution times (Total number of CPU-milliseconds that the process spent in user mode) with picks table activated:
+//   $ bash shell script "exe_times_statistics_for_multiple_test_cases" (10x) with test case files (*.in) located in directory: ./test_cases
+//     01_WEIGHTS4.in                      0ms
+//     02_WEIGHTS24_Kreher&Stinson.in     99ms
+//     03_WEIGHTS100_Xu_Xu_et_al.in     8143ms
+//     04_WEIGHTS_TODD_16.in               0ms
+//     04_WEIGHTS_TODD_17.in               1ms
+//     05_WEIGHTS_TODD_18.in               3ms
+//     06_WEIGHTS_TODD_19.in             -----  <not enough free available memory>
+//     06_WEIGHTS_TODD_20.in             -----  <not enough free available memory>
+//     7.in                              -----  <see below: not tested>
 //
-//
-// optimized release:
-//   timeout check 2023-09-13: execution times ~+15% up with period timeout checks (02_WEIGHTS24_Kreher&Stinson.in)
-// 2023-09-13: execution times with picks table activated:
-//     01_WEIGHTS4.in                      6ms   
-//     02_WEIGHTS24_Kreher&Stinson.in    162ms   
-//     03_WEIGHTS100_Xu_Xu_et_al.in     8206ms   
-//     04_WEIGHTS_TODD_16.in              23ms   
-//     04_WEIGHTS_TODD_17.in              47ms   
-//     05_WEIGHTS_TODD_18.in              87ms   
-//     06_WEIGHTS_TODD_19.in             -----  <not enough free available          
-//     06_WEIGHTS_TODD_20.in             -----  <not enough free available memory>  
-//     7.in                              -----  <see below: not tested>             
-//                                                                                  
-// 2023-09-13: execution times without picks table activated:                       
-//     01_WEIGHTS4.in                      0ms                                      
-//     02_WEIGHTS24_Kreher&Stinson.in     55ms                                      
-//     03_WEIGHTS100_Xu_Xu_et_al.in     6940ms                                      
-//     04_WEIGHTS_TODD_16.in               0ms                                      
-//     04_WEIGHTS_TODD_17.in               0ms                                      
-//     05_WEIGHTS_TODD_18.in               0ms                                      
-//     06_WEIGHTS_TODD_19.in               1ms                                      
-//     06_WEIGHTS_TODD_20.in               2ms                                      
+// 2023-09-24: same, but without picks table activated:
+//     01_WEIGHTS4.in                      0ms
+//     02_WEIGHTS24_Kreher&Stinson.in     40ms
+//     03_WEIGHTS100_Xu_Xu_et_al.in     6907ms
+//     04_WEIGHTS_TODD_16.in               0ms
+//     04_WEIGHTS_TODD_17.in               0ms
+//     05_WEIGHTS_TODD_18.in               0ms
+//     06_WEIGHTS_TODD_19.in               0ms
+//     06_WEIGHTS_TODD_20.in               4ms
 //     7.in                              -----  <stopped manually after many minutes>
 
 
@@ -72,12 +69,22 @@ fn main() -> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
 
     let mut picks_on: bool = true;  // default: with picks table activated
+    let mut exe_timer_on: bool = true;  // default: with internal execution timer activated
+
 
     if args.len() > 1 {
         if args[1] == "no_picks" || args[1] == "nopicks" || args[1] == "picks_off" || args[1] == "picksoff"
         {
             picks_on = false;  // no picks table to be activated
         }
+
+        if args.len() > 2 {
+            if args[2] == "no_timer" || args[2] == "notimer" || args[2] == "timer_off" || args[2] == "timeroff"
+            {
+                exe_timer_on = false;  // no internal execution timer to be activated
+            }
+        }
+
     }
 
 
@@ -149,16 +156,16 @@ fn main() -> Result<(), Box<dyn Error>> {
 
         // number of weight items, max capacity, expected max value:
         let n = u32::from_str(first_line[0]).unwrap();
-        
+
         let max_wt = u32::from_str(first_line[1]).unwrap();
-        
+
         // expected max value could be -1 if unknown yet => u32 => i32!!!
         //   thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: ParseIntError { kind: InvalidDigit }', src/main.rs:142:59
         let optimal_profit = i32::from_str(first_line[2]).unwrap();
 
         println!("  number of weight items = {}", &n);
         println!("  max capacity of knapsack = {}", &max_wt);
-        
+
         let mut v: Vec<u32> = vec![0; n.try_into().unwrap()];
         let mut w: Vec<u32> = vec![0; n.try_into().unwrap()];
 
@@ -173,7 +180,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         for h in 1..nbr_lines {
             // expect multi-space separation here:
             let chunks = input_lines[h].split_whitespace().collect::<Vec<_>>();
-            
+
             v[h-1] = u32::from_str(chunks[0]).unwrap();
             w[h-1] = u32::from_str(chunks[1]).unwrap();
         }
@@ -183,26 +190,37 @@ fn main() -> Result<(), Box<dyn Error>> {
         ////////////////////////////////////////////////////////////////////////////
         //
         // Dynamic Programming top-down (recursive) procedure:
-        
+
         // start stopwatch here:
-        let start = Instant::now();
 
         let result;
 
-        if picks_on {  // true
-            // function in another source file:
-            result = dp_knapsack_top_down_recursion::picks_on(w, v, max_wt);
+        if exe_timer_on {  // true
+            let start = Instant::now();
+
+            if picks_on {
+                // function in another source file:
+                result = dp_knapsack_top_down_recursion::picks_on(w, v, max_wt);
+            }
+            else {
+                // function in another source file:
+                result = dp_knapsack_top_down_recursion::picks_off(w, v, max_wt);
+            }
+
+            let duration = start.elapsed().as_millis();
+            println!("\n  Dynamic programming top-down (recursive) was completed with answer = {} and execution time = {}ms", result, duration );
         }
         else {
-            // function in another source file:
-            result = dp_knapsack_top_down_recursion::picks_off(w, v, max_wt);
+            if picks_on {
+                result = dp_knapsack_top_down_recursion::picks_on(w, v, max_wt);
+            }
+            else {
+                result = dp_knapsack_top_down_recursion::picks_off(w, v, max_wt);
+            }
+
+            println!("\n  Dynamic programming top-down (recursive) was completed with answer = {}", result);
         }
 
-        let duration = start.elapsed().as_millis();
-        // let duration_sec = start.elapsed().as_secs();
-        
-        println!("\n  Dynamic programming top-down (recursive) was completed with answer = {} and execution time = {}ms", result, duration );
-        // println!("\n    execution time = {}sec", duration_sec );
         println!("  The expected maximum value of the optimal knapsack is {}", optimal_profit);
 
         //
