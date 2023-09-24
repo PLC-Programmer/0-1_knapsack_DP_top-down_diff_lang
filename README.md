@@ -13,9 +13,11 @@ DP = Dynamic Programming
 Important things first (with Python included see below at https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang#diagrams-of-the-individual-programming-languages ):
 
 ![plot](./diagrams_svg/lang1_WEIGHTS100_Xu_Xu_ex_Python.svg)
- 
+
+<rev.2023-09-25: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
+
 This project is a spin-off from this project: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos, where only Algo 3 is used here: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos#algo-3----15-winner-dp-top-down 
-  
+
 
 ## The odd case of the implementation with C++
 
