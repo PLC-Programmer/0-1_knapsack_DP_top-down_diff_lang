@@ -11,34 +11,34 @@
 <text x="470" y="332" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 470, 332)" >Rust, picks off</text>
 <polyline points="100,310,100,50" stroke="#aaa" stroke-width="1.0"  />
 <polyline points="100,310,500,310" stroke="#aaa" stroke-width="1.0"  />
-<polyline points="100,281.81,500,281.81" stroke="#aaa" stroke-width="1.0"  />
-<polyline points="100,253.63,500,253.63" stroke="#aaa" stroke-width="1.0"  />
-<polyline points="100,225.44,500,225.44" stroke="#aaa" stroke-width="1.0"  />
-<polyline points="100,197.26,500,197.26" stroke="#aaa" stroke-width="1.0"  />
-<polyline points="100,169.07,500,169.07" stroke="#aaa" stroke-width="1.0"  />
-<polyline points="100,140.88,500,140.88" stroke="#aaa" stroke-width="1.0"  />
-<polyline points="100,112.70,500,112.70" stroke="#aaa" stroke-width="1.0"  />
-<polyline points="100,84.51,500,84.51" stroke="#aaa" stroke-width="1.0"  />
-<polyline points="100,56.32,500,56.32" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,281.89,500,281.89" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,253.77,500,253.77" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,225.66,500,225.66" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,197.54,500,197.54" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,169.43,500,169.43" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,141.32,500,141.32" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,113.20,500,113.20" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,85.09,500,85.09" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,56.98,500,56.98" stroke="#aaa" stroke-width="1.0"  />
 <text x="96" y="315.83" font-size="14pt" fill="#777"  text-anchor="end" >0</text>
-<text x="96" y="287.65" font-size="14pt" fill="#777"  text-anchor="end" >50000</text>
-<text x="96" y="259.46" font-size="14pt" fill="#777"  text-anchor="end" >100000</text>
-<text x="96" y="231.27" font-size="14pt" fill="#777"  text-anchor="end" >150000</text>
-<text x="96" y="203.09" font-size="14pt" fill="#777"  text-anchor="end" >200000</text>
-<text x="96" y="174.90" font-size="14pt" fill="#777"  text-anchor="end" >250000</text>
-<text x="96" y="146.72" font-size="14pt" fill="#777"  text-anchor="end" >300000</text>
-<text x="96" y="118.53" font-size="14pt" fill="#777"  text-anchor="end" >350000</text>
-<text x="96" y="90.34" font-size="14pt" fill="#777"  text-anchor="end" >400000</text>
-<text x="96" y="62.16" font-size="14pt" fill="#777"  text-anchor="end" >450000</text>
+<text x="96" y="287.72" font-size="14pt" fill="#777"  text-anchor="end" >50000</text>
+<text x="96" y="259.61" font-size="14pt" fill="#777"  text-anchor="end" >100000</text>
+<text x="96" y="231.49" font-size="14pt" fill="#777"  text-anchor="end" >150000</text>
+<text x="96" y="203.38" font-size="14pt" fill="#777"  text-anchor="end" >200000</text>
+<text x="96" y="175.26" font-size="14pt" fill="#777"  text-anchor="end" >250000</text>
+<text x="96" y="147.15" font-size="14pt" fill="#777"  text-anchor="end" >300000</text>
+<text x="96" y="119.04" font-size="14pt" fill="#777"  text-anchor="end" >350000</text>
+<text x="96" y="90.92" font-size="14pt" fill="#777"  text-anchor="end" >400000</text>
+<text x="96" y="62.81" font-size="14pt" fill="#777"  text-anchor="end" >450000</text>
 <text x="30" y="180" font-size="14pt" fill="#777"  text-anchor="middle" transform="rotate(-90, 30, 180)" >execution time [ms]</text>
 <rect x="116" y="50" width="18" height="260" fill="#88AA88" />
-<rect x="166" y="80.90" width="18" height="229.10" fill="#AB89AB" />
-<rect x="216" y="308.02" width="18" height="1.98" fill="#88AA88" />
+<rect x="166" y="83.02" width="18" height="226.98" fill="#AB89AB" />
+<rect x="216" y="307.99" width="18" height="2.01" fill="#88AA88" />
 <rect x="266" y="308.37" width="18" height="1.63" fill="#AB89AB" />
-<rect x="316" y="304.87" width="18" height="5.13" fill="#88AA88" />
-<rect x="366" y="305.01" width="18" height="4.99" fill="#AB89AB" />
-<rect x="416" y="305.37" width="18" height="4.63" fill="#88AA88" />
-<rect x="466" y="306.09" width="18" height="3.91" fill="#AB89AB" />
+<rect x="316" y="304.95" width="18" height="5.05" fill="#88AA88" />
+<rect x="366" y="305.20" width="18" height="4.80" fill="#AB89AB" />
+<rect x="416" y="305.42" width="18" height="4.58" fill="#88AA88" />
+<rect x="466" y="306.12" width="18" height="3.88" fill="#AB89AB" />
 <text x="55" y="30" font-size="20pt" fill="#777"  text-anchor="start" >Test case: 03_WEIGHTS100_Xu_Xu_et_al.in</text>
 
 </svg>
