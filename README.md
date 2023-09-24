@@ -39,7 +39,7 @@ Since the other test cases can be computed much faster (if possible in my enviro
 
 ![plot](./diagrams_svg/lang1_WEIGHTS100_Xu_Xu.svg)
 
-...this test case is omitted from these diagrams:
+...this test case is omitted from the diagrams of the individual programming languages:
 
 ![plot](./diagrams_svg/python.svg)
 
