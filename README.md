@@ -55,6 +55,8 @@ Since the other test cases can be computed much faster (if possible in my enviro
 
 ![plot](./diagrams_svg/rust.svg)
 
+<rev.2023-09-24, Rust: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
+
 ## Environment
 
 Hardware:
