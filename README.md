@@ -23,6 +23,8 @@ While C++ is looking good in above diagram, and as many would expect, this test 
 
 ![plot](./diagrams_svg/lang1_WEIGHTS_TODD_18_ex_Python.svg)
 
+<rev.2023-09-25: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
+
 Also with this test case, C++ is also not looking so good with an activated picks table (for backtracking the optimal result if desired):
 
 ![plot](./diagrams_svg/lang1_WEIGHTS24_Kreher_Stinson.svg)
