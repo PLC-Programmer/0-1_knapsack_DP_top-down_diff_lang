@@ -5,7 +5,7 @@ algorithm for different test cases and coded in different programming languages
 using the DataDraw Python library
 """
 #
-# Robert Sackmann, 2023-09-20b
+# Robert Sackmann, 2023-09-25
 #
 #
 # sources:
@@ -52,6 +52,8 @@ def run_all():
     # using method for a group of languages for both: picks on + off:
     # svgset1['lang1_WEIGHTS100_Xu_Xu'] = \
     #    bar_diagram.lang_grp(import_str='exe_times_WEIGHTS100_Xu_Xu_lang1', exclude='none')
+    svgset1['lang1_WEIGHTS100_Xu_Xu_ex_Python'] = \
+      bar_diagram.lang_grp(import_str='exe_times_WEIGHTS100_Xu_Xu_lang1', exclude='Python')
 
     # filtering out Python, then call:
     # svgset1['lang1_WEIGHTS_TODD_18'] = \
@@ -60,8 +62,8 @@ def run_all():
     #   bar_diagram.lang_grp(import_str='exe_times_WEIGHTS24_Kreher_Stinson_lang1', exclude='Python')
 
     # C++: effect of different g++ optimization options:
-    svgset1['cpp_gpp_WEIGHTS100_Xu_Xu'] = \
-        bar_diagram.cpp_gpp(import_str='exe_times_02_cpp_gpp_options_WEIGHTS100_Xu_Xu')
+    # svgset1['cpp_gpp_WEIGHTS100_Xu_Xu'] = \
+    #   bar_diagram.cpp_gpp(import_str='exe_times_02_cpp_gpp_options_WEIGHTS100_Xu_Xu')
 
     return svgset1
 
