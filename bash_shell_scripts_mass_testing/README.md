@@ -15,7 +15,10 @@ This script takes all test cases (*.in) from directory _./test_cases_ and copies
 It will produce a log file (_exe_times_statistics_for_multiple_test_cases_results.txt_) with simple test statistics.
 
 \
-Most important: **DO NOT SAVE UNTESTABLE INPUT FILES (TIMEOUT, NOT ENOUGH MEMORY) INTO THE TEST DIRECTORY! THIS WOULD CAUSE WRONG TEST RESULTS!**
+
+> **Warning**
+DO NOT SAVE UNTESTABLE INPUT FILES (TIMEOUT, NOT ENOUGH MEMORY) INTO THE TEST DIRECTORY! THIS WOULD CAUSE WRONG TEST RESULTS!
+
 
 So preselect your test cases files when mass testing.
 
