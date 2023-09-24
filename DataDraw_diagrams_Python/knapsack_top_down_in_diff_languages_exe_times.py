@@ -40,13 +40,13 @@ def run_all():
     svgset1 = {}
 
     # using method for an individual language:
-    # svgset1['python']  = bar_diagram.lang(import_str='exe_times_01_python', \
+    # svgset1['python_ex_Xu_Xu']  = bar_diagram.lang(import_str='exe_times_01_python', \
     #                                       exclude='03_WEIGHTS100_Xu_Xu_et_al.in')
-    # svgset1['cpp']  = bar_diagram.lang(import_str='exe_times_02_cpp', \
+    # svgset1['cpp_ex_Xu_Xu']  = bar_diagram.lang(import_str='exe_times_02_cpp', \
     #                                    exclude='03_WEIGHTS100_Xu_Xu_et_al.in')
-    # svgset1['cs']  = bar_diagram.lang(import_str='exe_times_03_cs', \
+    # svgset1['cs_ex_Xu_Xu']  = bar_diagram.lang(import_str='exe_times_03_cs', \
     #                                   exclude='03_WEIGHTS100_Xu_Xu_et_al.in')
-    # svgset1['rust']  = bar_diagram.lang(import_str='exe_times_04_rust', \
+    # svgset1['rust_ex_Xu_Xu']  = bar_diagram.lang(import_str='exe_times_04_rust', \
     #                                   exclude='03_WEIGHTS100_Xu_Xu_et_al.in')
 
     # using method for a group of languages for both: picks on + off:
@@ -56,9 +56,9 @@ def run_all():
       bar_diagram.lang_grp(import_str='exe_times_WEIGHTS100_Xu_Xu_lang1', exclude='Python')
 
     # filtering out Python, then call:
-    # svgset1['lang1_WEIGHTS_TODD_18'] = \
+    # svgset1['lang1_WEIGHTS_TODD_18_ex_Python'] = \
     #   bar_diagram.lang_grp(import_str='exe_times_WEIGHTS_TODD_18_lang1', exclude='Python')
-    # svgset1['lang1_WEIGHTS24_Kreher_Stinson'] = \
+    # svgset1['lang1_WEIGHTS24_Kreher_Stinson_ex_Python'] = \
     #   bar_diagram.lang_grp(import_str='exe_times_WEIGHTS24_Kreher_Stinson_lang1', exclude='Python')
 
     # C++: effect of different g++ optimization options:
