@@ -133,24 +133,34 @@ I experimented with these optimization options on test case _03_WEIGHTS100_Xu_Xu
  
 ## Case testing for execution times
 
-So far I have implemented three simple options:
+So far I have implemented three simple procedures:
 
-(a) running with internal timers (inside source code):
+(a) running with internal timers (done within the source code)
 
-...(examples how to run programs)
+Run in Linux (Ubuntu) like this:
 
-This option is probably not really useful for meaningful test statistics.
+* Python: _$ python3 ./dp_knapsack_top-down.py [no_picks, nopicks, picks_off, picksoff] [no_timer, notimer, timer_off, timeroff]_
+* C++: _$ ./dp_knapsack_top-down_main [no_picks, nopicks, picks_off, picksoff] **[20]** [no_timer, notimer, timer_off, timeroff]_
+* C#: _$ ./bin/Release/net7.0/linux-x64/dp_knapsack_top-down [no_picks, nopicks, picks_off, picksoff] [no_timer, notimer, timer_off, timeroff]_
+* Rust: _$ ./target/release/dp_knapsack_top-down [no_picks, nopicks, picks_off, picksoff] [no_timer, notimer, timer_off, timeroff]_ --> have the test case files (_*.in_) in same directory as the _Cargo.toml_ file
 
-Concepts differ from one programming language to the other, at least with my implementations. However, it's useful in my opinion to compare one test case with another **processed with a program written in the same programming language**. This is why this is the original timing implementation and will stay as a feature: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos
+Default options are:
+* _pickson_ for example (for an activated picks table)
+* (only in C++: a user modifiable timeout timer; this is a fixed setting of 20 minutes with the other languages)
+* _timeron_ for example (for an activated internal execution timer)
+ 
+This procedure is probably not really useful for meaningful test statistics.
+
+Time measurement concepts differ from one programming language to the other, at least with my implementations. However, an internal timer is useful in my opinion to compare one test case with another **processed with a program written in the same programming language**. This is why this is the original timing implementation and will stay as a feature: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos
 
 \
-(b) bash script for **one individual test case** file (*.in) in the current working directory (cwd):  _exe_times_statistics_for_one_test_case_in_cwd_
+(b) bash script for **one individual test case** file (*.in) in the current working directory (cwd): _exe_times_statistics_for_one_test_case_in_cwd_
 
-...(examples how to run programs)
-
-Also see: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/bash_shell_scripts_mass_testing
+See examples and further information from here ("bash shell scripts"): https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/bash_shell_scripts_mass_testing
 
 \
-(c) bash script for **mass testing** of test cases (*.in) saved in directory _./test_cases_:  _exe_times_statistics_for_multiple_test_cases_
+(c) bash script for **mass testing** of several test cases: _exe_times_statistics_for_multiple_test_cases_
 
-...(examples how to run programs)
+The test case files (_*.in_) are to be saved in the test case directory: _./test_cases_
+
+See examples and further information from here ("bash shell scripts"): https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/bash_shell_scripts_mass_testing
