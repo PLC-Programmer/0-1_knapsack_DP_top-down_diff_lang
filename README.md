@@ -33,11 +33,78 @@ However, with the (famous) _02_WEIGHTS24_Kreher&Stinson.in_ test case (https://g
 
 <rev.2023-09-25: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
-In the C++ program I use the **vector data type** for the **picks table** in the recursive function, however in Rust I do the same.
+In the C++ program I use the **vector data type** for the **picks table** in the recursive function:
 
-(In the C# program I use the array data type.)
+```
+class knapsack_recursive...
+    ...
+    vector<int> picks;  // 1dim array as vector (dynamic array) --> can grow dynamically
+    ...
+    int solveKnapsack(
+        ...
+        vector<int>& picks,
+        ...
+        ) {
+        ...
+        // building up the (huge) picks table (2dim array):
+        if (include > exclude) {
+            picks[items*max_wt + capacity] = 1;
+        }
+        else {
+            picks[items*max_wt + capacity] = -1;
+        }        
+        ...
+    }
+```
 
-(One might guess that also using the good old array data type might lead to a faster C++ program with some of the test cases.)
+However in Rust I do the same:
+
+```
+fn solve_knapsack_picks_on(
+    ...
+    &Vec<u32>,
+    ...) -> i32 {
+    ...
+    // building up the (huge) picks table (2dim array):
+    // unsafe due to using MAX_WT:
+    unsafe {
+        if include > exclude {
+            picks[_items * MAX_WT + capacity as usize] = 1;
+        }
+        else {
+            picks[_items * MAX_WT + capacity as usize] = -1;
+        }
+    }
+    ...
+}
+```
+
+In the C# program I use the array data type:
+
+```
+class knapsack_recursive {
+    ...
+    int[]? picks;  // Consider declaring the field as nullable.
+    ...
+    int solveKnapsack (
+        ...
+        int[] picks,
+        ...) {
+        ...
+        // building up the (huge) picks table (2dim array):
+        if (include > exclude) {
+            picks[items*max_wt + capacity] = 1;
+        }
+        else {
+            picks[items*max_wt + capacity] = -1;
+        }
+        ...
+    }
+    ...
+}
+```
+
+One might guess that also using the good old array data type might lead to a faster C++ program with some of the test cases...
 
 ## Diagrams of the individual programming languages
 
