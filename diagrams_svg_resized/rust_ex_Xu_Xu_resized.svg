@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   sds="23"
+   width="606.73444"
+   height="595.13757"
+   version="1.1"
+   id="svg56"
+   sodipodi:docname="rust_ex_Xu_Xu_resized.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs56" />
+  <sodipodi:namedview
+     id="namedview56"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.0672727"
+     inkscape:cx="284.19085"
+     inkscape:cy="264.35796"
+     inkscape:window-width="2560"
+     inkscape:window-height="1351"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg56" />
+  <text
+     x="265.82477"
+     y="105.40717"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text1">01_WEIGHTS4.in, picks on</text>
+  <text
+     x="279.88254"
+     y="88.653786"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text2">01_WEIGHTS4.in, picks off</text>
+  <text
+     x="293.94675"
+     y="71.892731"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text3">02_WEIGHTS24_Kreher_Stinson.in, picks on</text>
+  <text
+     x="308.00449"
+     y="55.139339"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text4">02_WEIGHTS24_Kreher_Stinson.in, picks off</text>
+  <text
+     x="322.0687"
+     y="38.378288"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text5">04_WEIGHTS_TODD_16.in, picks on</text>
+  <text
+     x="336.12646"
+     y="21.624895"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text6">04_WEIGHTS_TODD_16.in, picks off</text>
+  <text
+     x="350.19064"
+     y="4.8638434"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text7">04_WEIGHTS_TODD_17.in, picks on</text>
+  <text
+     x="364.24841"
+     y="-11.889548"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text8">04_WEIGHTS_TODD_17.in, picks off</text>
+  <text
+     x="378.31262"
+     y="-28.6506"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text9">05_WEIGHTS_TODD_18.in, picks on</text>
+  <text
+     x="392.37036"
+     y="-45.403992"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text10">05_WEIGHTS_TODD_18.in, picks off</text>
+  <text
+     x="406.43457"
+     y="-62.165047"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text11">06_WEIGHTS_TODD_19.in, picks on</text>
+  <text
+     x="420.49234"
+     y="-78.918434"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text12">06_WEIGHTS_TODD_19.in, picks off</text>
+  <text
+     x="434.55652"
+     y="-95.679489"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text13">06_WEIGHTS_TODD_20.in, picks on</text>
+  <text
+     x="448.61429"
+     y="-112.43288"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text14">06_WEIGHTS_TODD_20.in, picks off</text>
+  <text
+     x="462.6785"
+     y="-129.19394"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text15">7.in, picks on</text>
+  <text
+     x="476.73624"
+     y="-145.94733"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text16">7.in, picks off</text>
+  <polyline
+     points="100,260,100,50"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline16"
+     transform="translate(-15.817709,-10.61198)" />
+  <polyline
+     points="100,260,450,260"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline17"
+     transform="translate(-15.817709,-10.61198)" />
+  <polyline
+     points="100,238.79,450,238.79"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline18"
+     transform="translate(-15.817709,-10.61198)" />
+  <polyline
+     points="100,217.58,450,217.58"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline19"
+     transform="translate(-15.817709,-10.61198)" />
+  <polyline
+     points="100,196.36,450,196.36"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline20"
+     transform="translate(-15.817709,-10.61198)" />
+  <polyline
+     points="100,175.15,450,175.15"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline21"
+     transform="translate(-15.817709,-10.61198)" />
+  <polyline
+     points="100,153.94,450,153.94"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline22"
+     transform="translate(-15.817709,-10.61198)" />
+  <polyline
+     points="100,132.73,450,132.73"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline23"
+     transform="translate(-15.817709,-10.61198)" />
+  <polyline
+     points="100,111.52,450,111.52"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline24"
+     transform="translate(-15.817709,-10.61198)" />
+  <polyline
+     points="100,90.30,450,90.30"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline25"
+     transform="translate(-15.817709,-10.61198)" />
+  <polyline
+     points="100,69.09,450,69.09"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline26"
+     transform="translate(-15.817709,-10.61198)" />
+  <text
+     x="80.182289"
+     y="255.218"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text26">0</text>
+  <text
+     x="80.182289"
+     y="234.00801"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text27">10</text>
+  <text
+     x="80.182289"
+     y="212.79802"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text28">20</text>
+  <text
+     x="80.182289"
+     y="191.58801"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text29">30</text>
+  <text
+     x="80.182289"
+     y="170.36801"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text30">40</text>
+  <text
+     x="80.182289"
+     y="149.15802"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text31">50</text>
+  <text
+     x="80.182289"
+     y="127.94802"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text32">60</text>
+  <text
+     x="80.182289"
+     y="106.73802"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text33">70</text>
+  <text
+     x="80.182289"
+     y="85.528023"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text34">80</text>
+  <text
+     x="80.182289"
+     y="64.308022"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text35">90</text>
+  <text
+     x="-144.38802"
+     y="14.182291"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="middle"
+     transform="rotate(-90)"
+     id="text36">execution time [ms]</text>
+  <rect
+     x="87.122292"
+     y="249.38802"
+     width="16"
+     height="0"
+     fill="#88aa88"
+     id="rect36" />
+  <rect
+     x="108.99229"
+     y="249.38802"
+     width="16"
+     height="0"
+     fill="#ab89ab"
+     id="rect37" />
+  <rect
+     x="130.8723"
+     y="39.38802"
+     width="16"
+     height="210"
+     fill="#88aa88"
+     id="rect38" />
+  <rect
+     x="152.74229"
+     y="164.53801"
+     width="16"
+     height="84.849998"
+     fill="#ab89ab"
+     id="rect39" />
+  <rect
+     x="174.6223"
+     y="249.38802"
+     width="16"
+     height="0"
+     fill="#88aa88"
+     id="rect40" />
+  <rect
+     x="196.49229"
+     y="249.38802"
+     width="16"
+     height="0"
+     fill="#ab89ab"
+     id="rect41" />
+  <rect
+     x="218.3723"
+     y="247.26802"
+     width="16"
+     height="2.1199999"
+     fill="#88aa88"
+     id="rect42" />
+  <rect
+     x="240.24229"
+     y="249.38802"
+     width="16"
+     height="0"
+     fill="#ab89ab"
+     id="rect43" />
+  <rect
+     x="262.12228"
+     y="243.02802"
+     width="16"
+     height="6.3600001"
+     fill="#88aa88"
+     id="rect44" />
+  <rect
+     x="283.99228"
+     y="249.38802"
+     width="16"
+     height="0"
+     fill="#ab89ab"
+     id="rect45" />
+  <rect
+     x="305.87228"
+     y="-10.611979"
+     width="16"
+     height="0"
+     fill="#88aa88"
+     id="rect46" />
+  <rect
+     x="327.74228"
+     y="249.38802"
+     width="16"
+     height="0"
+     fill="#ab89ab"
+     id="rect47" />
+  <rect
+     x="349.62228"
+     y="-10.611979"
+     width="16"
+     height="0"
+     fill="#88aa88"
+     id="rect48" />
+  <rect
+     x="371.49228"
+     y="240.90802"
+     width="16"
+     height="8.4799995"
+     fill="#ab89ab"
+     id="rect49" />
+  <rect
+     x="393.37228"
+     y="-10.611979"
+     width="16"
+     height="0"
+     fill="#88aa88"
+     id="rect50" />
+  <rect
+     x="415.24228"
+     y="-10.611979"
+     width="16"
+     height="0"
+     fill="#ab89ab"
+     id="rect51" />
+  <text
+     x="39.182293"
+     y="19.38802"
+     font-size="26.6667px"
+     fill="#777777"
+     text-anchor="start"
+     id="text51">Rust</text>
+  <text
+     x="302.93228"
+     y="33.88802"
+     font-size="16px"
+     fill="#9999ff"
+     text-anchor="start"
+     id="text56"><tspan
+       id="tspan51">test(s) with no valid result</tspan><tspan
+       x="302.93228"
+       dy="16.799999"
+       id="tspan52">(timeout, not enough memory):</tspan><tspan
+       x="302.93228"
+       dy="16.799999"
+       id="tspan53">06_WEIGHTS_TODD_19.in, picks on</tspan><tspan
+       x="302.93228"
+       dy="16.799999"
+       id="tspan54">06_WEIGHTS_TODD_20.in, picks on</tspan><tspan
+       x="302.93228"
+       dy="16.799999"
+       id="tspan55">7.in, picks on</tspan><tspan
+       x="302.93228"
+       dy="16.799999"
+       id="tspan56">7.in, picks off</tspan></text>
+</svg>
