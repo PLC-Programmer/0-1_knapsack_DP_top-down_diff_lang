@@ -27,9 +27,9 @@ While C++ is looking good in above diagram, and as many would expect, this test 
 
 <rev.2023-09-25: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
-However, with the (famous) 02_WEIGHTS24_Kreher&Stinson.in test case (https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos#02_weights24_kreherstinsonin) the program in C++ can compare in speed with its counterpart in Rust with an activated picks table (for backtracking the optimal result if desired):
+However, with the (famous) _02_WEIGHTS24_Kreher&Stinson.in_ test case (https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos#02_weights24_kreherstinsonin) the program in C++ can compare in speed with its counterpart in Rust with an activated picks table (for backtracking the optimal result if desired):
 
-![plot](./diagrams_svg_resized/lang1_WEIGHTS24_Kreher_Stinson_resized.svg)
+![plot](./diagrams_svg_resized/lang1_WEIGHTS24_Kreher_Stinson_ex_Python_resized.svg)
 
 <rev.2023-09-25: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
@@ -47,20 +47,24 @@ Since the other test cases can be computed much faster (if possible in my enviro
 
 <rev.2023-09-24: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
+\
 ...this test case is omitted from the diagrams of the individual programming languages:
 
 ![plot](./diagrams_svg_resized/python_ex_Xu_Xu_resized.svg)
 
 <rev.2023-09-23, Python: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
+\
 ![plot](./diagrams_svg_resized/cpp_ex_Xu_Xu_resized.svg)
 
 <rev.2023-09-22, C++: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command; g++ -O3 compiled>
 
+\
 ![plot](./diagrams_svg_resized/cs_ex_Xu_Xu_resized.svg)
 
 <rev.2023-09-23, C#: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
+\
 ![plot](./diagrams_svg_resized/rust_ex_Xu_Xu_resized.svg)
 
 <rev.2023-09-24, Rust: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
