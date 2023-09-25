@@ -1,6 +1,6 @@
 # The 0/1 knapsack problem with dynamic programming with the top-down (recursive) algorithm: comparing execution speeds of programming languages
 
-2023-09-19/20/22/23/24...: a work in progress (WIP)
+2023-09-19/20/22/23/24/25...: a work in progress (WIP)
 
 First batch of programming languages:
 * **Python**: albeit slow, if possible this is my reference for calculating a correct result for an unknown test case
@@ -43,25 +43,25 @@ In the C++ program I use the **vector data type** for the **picks table** in the
 
 Since the other test cases can be computed much faster (if possible in my environment) than test case _03_WEIGHTS100_Xu_Xu_et_al.in_:
 
-![plot](./diagrams_svg/lang1_WEIGHTS100_Xu_Xu.svg)
+![plot](./diagrams_svg_resized/lang1_WEIGHTS100_Xu_Xu_resized.svg)
 
 <rev.2023-09-24: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
 ...this test case is omitted from the diagrams of the individual programming languages:
 
-![plot](./diagrams_svg/python.svg)
+![plot](./diagrams_svg_resized/python_ex_Xu_Xu_resized.svg)
 
 <rev.2023-09-23, Python: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
-![plot](./diagrams_svg/cpp.svg)
+![plot](./diagrams_svg_resized/cpp_ex_Xu_Xu_resized.svg)
 
 <rev.2023-09-22, C++: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command; g++ -O3 compiled>
 
-![plot](./diagrams_svg/cs.svg)
+![plot](./diagrams_svg_resized/cs_ex_Xu_Xu_resized.svg)
 
 <rev.2023-09-23, C#: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
-![plot](./diagrams_svg/rust.svg)
+![plot](./diagrams_svg_resized/rust_ex_Xu_Xu_resized.svg)
 
 <rev.2023-09-24, Rust: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
 
@@ -124,7 +124,7 @@ I experimented with these optimization options on test case _03_WEIGHTS100_Xu_Xu
 
 * -Ofast -- Disregard strict standards compliance.
 
-![plot](./diagrams_svg/cpp_gpp_WEIGHTS100_Xu_Xu.svg)
+![plot](./diagrams_svg_resized/cpp_gpp_WEIGHTS100_Xu_Xu_resized.svg)
 
  
 ## Case testing for execution times
