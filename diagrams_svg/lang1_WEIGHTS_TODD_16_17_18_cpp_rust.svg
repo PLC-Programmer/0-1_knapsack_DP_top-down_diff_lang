@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" sds="23" width="600" height="550">
+<text x="124.17" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 124.17, 282)" >04_WEIGHTS_TODD_16.in, C++</text>
+<text x="182.50" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 182.50, 282)" >04_WEIGHTS_TODD_16.in, Rust</text>
+<text x="240.83" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 240.83, 282)" >04_WEIGHTS_TODD_17.in, C++</text>
+<text x="299.17" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 299.17, 282)" >04_WEIGHTS_TODD_17.in, Rust</text>
+<text x="357.50" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 357.50, 282)" >05_WEIGHTS_TODD_18.in, C++</text>
+<text x="415.83" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 415.83, 282)" >05_WEIGHTS_TODD_18.in, Rust</text>
+<polyline points="100,260,100,50" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,260,450,260" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,236.80,450,236.80" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,213.59,450,213.59" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,190.39,450,190.39" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,167.18,450,167.18" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,143.98,450,143.98" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,120.77,450,120.77" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,97.57,450,97.57" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,74.36,450,74.36" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,51.16,450,51.16" stroke="#aaa" stroke-width="1.0"  />
+<text x="96" y="265.83" font-size="14pt" fill="#777"  text-anchor="end" >0</text>
+<text x="96" y="242.63" font-size="14pt" fill="#777"  text-anchor="end" >20</text>
+<text x="96" y="219.42" font-size="14pt" fill="#777"  text-anchor="end" >40</text>
+<text x="96" y="196.22" font-size="14pt" fill="#777"  text-anchor="end" >60</text>
+<text x="96" y="173.02" font-size="14pt" fill="#777"  text-anchor="end" >80</text>
+<text x="96" y="149.81" font-size="14pt" fill="#777"  text-anchor="end" >100</text>
+<text x="96" y="126.61" font-size="14pt" fill="#777"  text-anchor="end" >120</text>
+<text x="96" y="103.40" font-size="14pt" fill="#777"  text-anchor="end" >140</text>
+<text x="96" y="80.20" font-size="14pt" fill="#777"  text-anchor="end" >160</text>
+<text x="96" y="56.99" font-size="14pt" fill="#777"  text-anchor="end" >180</text>
+<text x="30" y="155" font-size="14pt" fill="#777"  text-anchor="middle" transform="rotate(-90, 30, 155)" >execution time [ms]</text>
+<rect x="121.17" y="225.19" width="16" height="34.81" fill="#88AA88" />
+<rect x="179.50" y="260" width="16" height="0" fill="#AB89AB" />
+<rect x="237.83" y="162.54" width="16" height="97.46" fill="#88AA88" />
+<rect x="296.17" y="258.84" width="16" height="1.16" fill="#AB89AB" />
+<rect x="354.50" y="50" width="16" height="210" fill="#88AA88" />
+<rect x="412.83" y="256.52" width="16" height="3.48" fill="#AB89AB" />
+<text x="55" y="30" font-size="20pt" fill="#777"  text-anchor="start" >C++ vs Rust -- TODD class problems, picks on</text>
+
+</svg>
+
