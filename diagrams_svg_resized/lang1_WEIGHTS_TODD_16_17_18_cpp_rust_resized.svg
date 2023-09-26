@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   sds="23"
+   width="664.55988"
+   height="507.36047"
+   version="1.1"
+   id="svg31"
+   sodipodi:docname="lang1_WEIGHTS_TODD_16_17_18_cpp_rust_resized.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs31" />
+  <sodipodi:namedview
+     id="namedview31"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.0672727"
+     inkscape:cx="284.19085"
+     inkscape:cy="265.32542"
+     inkscape:window-width="2560"
+     inkscape:window-height="1351"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg31" />
+  <text
+     x="278.21109"
+     y="92.002953"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text1">04_WEIGHTS_TODD_16.in, C++</text>
+  <text
+     x="315.7049"
+     y="47.31958"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text2">04_WEIGHTS_TODD_16.in, Rust</text>
+  <text
+     x="353.1987"
+     y="2.6362069"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text3">04_WEIGHTS_TODD_17.in, C++</text>
+  <text
+     x="390.69894"
+     y="-42.054825"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text4">04_WEIGHTS_TODD_17.in, Rust</text>
+  <text
+     x="428.19272"
+     y="-86.738197"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text5">05_WEIGHTS_TODD_18.in, C++</text>
+  <text
+     x="465.68652"
+     y="-131.42157"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text6">05_WEIGHTS_TODD_18.in, Rust</text>
+  <polyline
+     points="100,260,100,50"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline6"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,260,450,260"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline7"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,236.80,450,236.80"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline8"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,213.59,450,213.59"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline9"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,190.39,450,190.39"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline10"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,167.18,450,167.18"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline11"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,143.98,450,143.98"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline12"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,120.77,450,120.77"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline13"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,97.57,450,97.57"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline14"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,74.36,450,74.36"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline15"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,51.16,450,51.16"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline16"
+     transform="translate(-15.817709,-9.7395838)" />
+  <text
+     x="80.182289"
+     y="256.09039"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text16">0</text>
+  <text
+     x="80.182289"
+     y="232.89043"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text17">20</text>
+  <text
+     x="80.182289"
+     y="209.68042"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text18">40</text>
+  <text
+     x="80.182289"
+     y="186.48042"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text19">60</text>
+  <text
+     x="80.182289"
+     y="163.28043"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text20">80</text>
+  <text
+     x="80.182289"
+     y="140.07042"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text21">100</text>
+  <text
+     x="80.182289"
+     y="116.87041"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text22">120</text>
+  <text
+     x="80.182289"
+     y="93.660416"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text23">140</text>
+  <text
+     x="80.182289"
+     y="70.460411"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text24">160</text>
+  <text
+     x="80.182289"
+     y="47.25042"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text25">180</text>
+  <text
+     x="-145.26042"
+     y="14.182291"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="middle"
+     transform="rotate(-90)"
+     id="text26">execution time [ms]</text>
+  <rect
+     x="105.35229"
+     y="215.45042"
+     width="16"
+     height="34.810001"
+     fill="#88aa88"
+     id="rect26" />
+  <rect
+     x="163.6823"
+     y="250.26042"
+     width="16"
+     height="0"
+     fill="#ab89ab"
+     id="rect27" />
+  <rect
+     x="222.0123"
+     y="152.80042"
+     width="16"
+     height="97.459999"
+     fill="#88aa88"
+     id="rect28" />
+  <rect
+     x="280.35229"
+     y="249.10042"
+     width="16"
+     height="1.16"
+     fill="#ab89ab"
+     id="rect29" />
+  <rect
+     x="338.68228"
+     y="40.260418"
+     width="16"
+     height="210"
+     fill="#88aa88"
+     id="rect30" />
+  <rect
+     x="397.01227"
+     y="246.78041"
+     width="16"
+     height="3.48"
+     fill="#ab89ab"
+     id="rect31" />
+  <text
+     x="39.182293"
+     y="20.260416"
+     font-size="26.6667px"
+     fill="#777777"
+     text-anchor="start"
+     id="text31">C++ vs Rust -- TODD class problems, picks on</text>
+</svg>
