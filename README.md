@@ -1,6 +1,6 @@
 # The 0/1 knapsack problem with dynamic programming with the top-down (recursive) algorithm: comparing execution speeds of programming languages
 
-2023-09-19/20/22/23/24/25...: a work in progress (WIP)
+2023-09-19/20/22/23/24/25/26...: a work in progress (WIP)
 
 First batch of programming languages:
 * **Python**: albeit slow, if possible this is my reference for calculating a correct result for an unknown test case
@@ -19,9 +19,9 @@ Important things first (with Python included see below at https://github.com/PLC
 This project is a spin-off from this project: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos, where only Algo 3 is used here: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos#algo-3----15-winner-dp-top-down 
 
 
-## The odd case of the implementation with C++
+## The odd case of using the vector data type in C++
 
-While C++ is looking good in above diagram, and as many would expect, this test case, which is very different in nature, might come as a shock even:
+While C++ is looking good in above diagram and as many would expect, this test case, which is very different in nature, might come as a shock even:
 
 ![plot](./diagrams_svg_resized/lang1_WEIGHTS_TODD_18_ex_Python_resized.svg)
 
@@ -57,7 +57,7 @@ class knapsack_recursive...
     }
 ```
 
-However in Rust I do the same:
+However, in Rust I do it similarly (in my opinion):
 
 ```
 fn solve_knapsack_picks_on(
@@ -79,7 +79,16 @@ fn solve_knapsack_picks_on(
 }
 ```
 
-In the C# program I use the array data type:
+\
+Well, with the TODD class problems C++ is really looking bad when using vectors compared to Rust and its vector data type -- or I have made something stupid with C++ vectors:
+
+
+![plot](./diagrams_svg_resized/lang1_WEIGHTS_TODD_16_17_18_cpp_rust_resized.svg)
+
+<rev.2023-09-26: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
+
+\
+By the way, in the C# program I use the array data type:
 
 ```
 class knapsack_recursive {
