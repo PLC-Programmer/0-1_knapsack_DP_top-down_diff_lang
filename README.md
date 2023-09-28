@@ -1,6 +1,6 @@
 # The 0/1 knapsack problem with dynamic programming with the top-down (recursive) algorithm: comparing execution speeds of programming languages
 
-2023-09-19/20/22/23/24/25/26...: a work in progress (WIP)
+2023-09-19/20/22/23/24/25/26/29...: a work in progress (WIP)
 
 First batch of programming languages:
 * **Python**: albeit slow, if possible this is my reference for calculating a correct result for an unknown test case
@@ -240,3 +240,55 @@ See examples and further information from here ("bash shell scripts"): https://g
 The test case files (_*.in_) are to be saved in the test case directory: _./test_cases_
 
 See examples and further information from here ("bash shell scripts"): https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/bash_shell_scripts_mass_testing
+
+
+## Other notes and observations
+
+None of this source code is probably written in an optimal way for (overall) minimum execution speed; at least I don't have the intention to do so (nor do I deem myself able to do it). My intention is to write code for correct programs that compute the correct optimal results and behave stable with the different test cases. That's why I stuck with the vector data type for the C++ program as done here: https://github.com/DenXman111/axiotis-tzamos
+
+By the way: the vector data type has been introduced with the C++98 (ISO/IEC 14882:1998) standard, the first formal standardization of C++: https://www.iso.org/standard/25845.html
+
+### 7.in test case
+
+So far, I was not able to calculate the optimal value for this test case with 100 weight items, a higher number of weight items where the DP top-down approach is the slowest: https://github.com/PLC-Programmer/knapsack_Axiotis-Tzamos#algo-3----15-winner-dp-top-down
+  
+With the C++ program I stopped after a 75 minutes timeout for example: _$ ./dp_knapsack_top-down_main no_picks 75_
+
+### Rust
+
+Trying to code in Rust is some real challenge for the first couple of days (this is my first Rust program). However, after a while you will have learned a lot also about other programming languages in my experience.
+
+### C#
+
+C# is astonishingly fast at this computation task in my opinion. Specifically when you think that with C#'s **managed code** (bytecode in Microsoft Intermediate Language, MSIL) is being executing in its Common Language Runtime (CLR) after being just in time compiled (JIT: https://dev.to/kcrnac/net-execution-process-explained-c-1b7a); again see:
+
+![plot](./diagrams_svg_resized/lang1_WEIGHTS100_Xu_Xu_ex_Python_resized.svg)
+
+### Extra timeout checks
+
+All programs provide a timeout check in their recursive functions (for both cases, picks on and picks off). With Rust and the _02_WEIGHTS24_Kreher&Stinson.in_ test case it added about +15% more execution time:
+
+```
+...
+unsafe {
+  if TIME_COUNTER > TIME_CHECK_COUNTER {
+
+     let duration = INT_MILLI_START.elapsed().as_millis();
+
+     if duration > TIME_LIMIT {
+        if CLEANUP_FLAG == false {
+            CLEANUP_FLAG = true;
+            println!("\n  >>> Dynamic Programming top-down: stopping execution due to exceeded time limit of 20 minutes. Cleaning up...\n");
+        }
+        return i32::MIN;
+     }
+     else {TIME_COUNTER = 0;}
+  }
+  TIME_COUNTER += 1;
+}
+...
+```
+
+from: _dp_knapsack_top_down_recursion.rs_
+
+##_end
