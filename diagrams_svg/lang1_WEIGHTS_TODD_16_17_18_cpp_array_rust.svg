@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" sds="23" width="600" height="550">
+<text x="124.17" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 124.17, 282)" >04_WEIGHTS_TODD_16.in, C++</text>
+<text x="182.50" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 182.50, 282)" >04_WEIGHTS_TODD_16.in, Rust</text>
+<text x="240.83" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 240.83, 282)" >04_WEIGHTS_TODD_17.in, C++</text>
+<text x="299.17" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 299.17, 282)" >04_WEIGHTS_TODD_17.in, Rust</text>
+<text x="357.50" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 357.50, 282)" >05_WEIGHTS_TODD_18.in, C++</text>
+<text x="415.83" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 415.83, 282)" >05_WEIGHTS_TODD_18.in, Rust</text>
+<polyline points="100,260,100,50" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,260,450,260" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,218,450,218" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,176,450,176" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,134,450,134" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,92,450,92" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,50,450,50" stroke="#aaa" stroke-width="1.0"  />
+<text x="96" y="265.83" font-size="14pt" fill="#777"  text-anchor="end" >0</text>
+<text x="96" y="223.83" font-size="14pt" fill="#777"  text-anchor="end" >1</text>
+<text x="96" y="181.83" font-size="14pt" fill="#777"  text-anchor="end" >2</text>
+<text x="96" y="139.83" font-size="14pt" fill="#777"  text-anchor="end" >3</text>
+<text x="96" y="97.83" font-size="14pt" fill="#777"  text-anchor="end" >4</text>
+<text x="96" y="55.83" font-size="14pt" fill="#777"  text-anchor="end" >5</text>
+<text x="30" y="155" font-size="14pt" fill="#777"  text-anchor="middle" transform="rotate(-90, 30, 155)" >execution time [ms]</text>
+<rect x="121.17" y="260" width="16" height="0" fill="#88AA88" />
+<rect x="179.50" y="260" width="16" height="0" fill="#AB89AB" />
+<rect x="237.83" y="176" width="16" height="84" fill="#88AA88" />
+<rect x="296.17" y="218" width="16" height="42" fill="#AB89AB" />
+<rect x="354.50" y="50" width="16" height="210" fill="#88AA88" />
+<rect x="412.83" y="134" width="16" height="126" fill="#AB89AB" />
+<text x="55" y="30" font-size="20pt" fill="#777"  text-anchor="start" >C++ vs Rust -- C++ array vs Rust vector, picks on</text>
+
+</svg>
+
