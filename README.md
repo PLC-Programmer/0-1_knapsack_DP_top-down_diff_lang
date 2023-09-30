@@ -1,6 +1,6 @@
 # The 0/1 knapsack problem with dynamic programming with the top-down (recursive) algorithm: comparing execution speeds of programming languages
 
-2023-09-19/20/22/23/24/25/26/29...: a work in progress (WIP)
+2023-09-19/20/22/23/24/25/26/29/30...: a work in progress (WIP)
 
 First batch of programming languages:
 * **Python**: albeit slow, if possible this is my reference for calculating a correct result for an unknown test case
@@ -114,6 +114,25 @@ class knapsack_recursive {
 ```
 
 One might guess that also using the good old array data type might lead to a faster C++ program with some of the test cases...
+
+### C++: using array instead of the vector data type for the picks table
+
+...and voilà: using an array instead of a vector makes all (practically measurable) test cases faster (~)..
+
+![plot](./diagrams_svg_resized/exe_times_02_cpp_array_vs_vector_resized.svg)
+
+<rev.2023-09-30: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
+
+...and specifically the test cases of the TODD class problems (for those that can be tested so far):
+
+![plot](./diagrams_svg_resized/exe_times_02_cpp_array_vs_vector_TODD_resized.svg)
+
+<rev.2023-09-30: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
+
+..even when considering that the precision of the Linux _time_ command is apparently only +/-10 milliseconds: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/bash_shell_scripts_mass_testing
+
+(~) inside the recursive function when the picks table is activated; see _dp_knapsack_top-down_recursion_array.cpp_ from the alternative C++ source code files: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/source_code_files/alternative_data_types
+
 
 ## Diagrams of the individual programming languages
 
