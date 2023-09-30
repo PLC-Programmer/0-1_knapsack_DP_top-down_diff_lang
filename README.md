@@ -1,8 +1,6 @@
 # The 0/1 knapsack problem with dynamic programming with the top-down (recursive) algorithm: comparing execution speeds of programming languages
 
-2023-09-19/20/22/23/24/25/26/29/30...: a work in progress (WIP)
-
-First batch of programming languages:
+2023-09-19/.../30: with the last diagram (TODD class problems: C++ array vs Rust vector with picks table on) this README.md file seems to have reached a final point for the first batch of programming languages:
 * **Python**: albeit slow, if possible this is my reference for calculating a correct result for an unknown test case
 * **C++** (with the _g++ -O3_ optimization option; gcc version 11.4.0 has been used here)
 * **C#** (release build)
@@ -132,6 +130,18 @@ One might guess that also using the good old array data type might lead to a fas
 ..even when considering that the precision of the Linux _time_ command is apparently only +/-10 milliseconds: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/bash_shell_scripts_mass_testing
 
 (~) inside the recursive function when the picks table is activated; see _dp_knapsack_top-down_recursion_array.cpp_ from the alternative C++ source code files: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/source_code_files/alternative_data_types
+
+\
+The C++ program's execution times with the TODD class problems are now in the same region as those of the Rust program:
+
+![plot](./diagrams_svg_resized/lang1_WEIGHTS_TODD_16_17_18_cpp_array_rust_resized.svg)
+
+<rev.2023-09-30: mass tested with script: 10 rounds for each test case, arithmetic mean, using Linux time command>
+
+Remember that with a C++ vector for the picks table we had this diagram from above:
+
+![plot](./diagrams_svg_resized/lang1_WEIGHTS_TODD_16_17_18_cpp_rust_resized.svg)
+
 
 
 ## Diagrams of the individual programming languages
