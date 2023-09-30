@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" sds="23" width="600" height="550">
+<text x="109.58" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 109.58, 282)" >01_WEIGHTS4.in, vector</text>
+<text x="138.75" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 138.75, 282)" >01_WEIGHTS4.in, array</text>
+<text x="167.92" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 167.92, 282)" >02_WEIGHTS24_Kreher_Stinson.in, vector</text>
+<text x="197.08" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 197.08, 282)" >02_WEIGHTS24_Kreher_Stinson.in, array</text>
+<text x="226.25" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 226.25, 282)" >03_WEIGHTS100_Xu_Xu_et_al.in, vector</text>
+<text x="255.42" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 255.42, 282)" >03_WEIGHTS100_Xu_Xu_et_al.in, array</text>
+<text x="284.58" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 284.58, 282)" >04_WEIGHTS_TODD_16.in, vector</text>
+<text x="313.75" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 313.75, 282)" >04_WEIGHTS_TODD_16.in, array</text>
+<text x="342.92" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 342.92, 282)" >04_WEIGHTS_TODD_17.in, vector</text>
+<text x="372.08" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 372.08, 282)" >04_WEIGHTS_TODD_17.in, array</text>
+<text x="401.25" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 401.25, 282)" >05_WEIGHTS_TODD_18.in, vector</text>
+<text x="430.42" y="282" font-size="14pt" fill="#777"  text-anchor="start" transform="rotate(50, 430.42, 282)" >05_WEIGHTS_TODD_18.in, array</text>
+<polyline points="100,260,100,50" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,260,450,260" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,230.69,450,230.69" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,201.39,450,201.39" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,172.08,450,172.08" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,142.78,450,142.78" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,113.47,450,113.47" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,84.17,450,84.17" stroke="#aaa" stroke-width="1.0"  />
+<polyline points="100,54.86,450,54.86" stroke="#aaa" stroke-width="1.0"  />
+<text x="96" y="265.83" font-size="14pt" fill="#777"  text-anchor="end" >0</text>
+<text x="96" y="236.53" font-size="14pt" fill="#777"  text-anchor="end" >500</text>
+<text x="96" y="207.22" font-size="14pt" fill="#777"  text-anchor="end" >1000</text>
+<text x="96" y="177.92" font-size="14pt" fill="#777"  text-anchor="end" >1500</text>
+<text x="96" y="148.61" font-size="14pt" fill="#777"  text-anchor="end" >2000</text>
+<text x="96" y="119.31" font-size="14pt" fill="#777"  text-anchor="end" >2500</text>
+<text x="96" y="90" font-size="14pt" fill="#777"  text-anchor="end" >3000</text>
+<text x="96" y="60.70" font-size="14pt" fill="#777"  text-anchor="end" >3500</text>
+<text x="30" y="155" font-size="14pt" fill="#777"  text-anchor="middle" transform="rotate(-90, 30, 155)" >execution time [ms]</text>
+<rect x="106.58" y="260" width="16" height="0" fill="#88AA88" />
+<rect x="135.75" y="260" width="16" height="0" fill="#AB89AB" />
+<rect x="164.92" y="253.61" width="16" height="6.39" fill="#88AA88" />
+<rect x="194.08" y="255.19" width="16" height="4.81" fill="#AB89AB" />
+<rect x="223.25" y="50" width="16" height="210" fill="#88AA88" />
+<rect x="252.42" y="70.63" width="16" height="189.37" fill="#AB89AB" />
+<rect x="281.58" y="258.24" width="16" height="1.76" fill="#88AA88" />
+<rect x="310.75" y="260" width="16" height="0" fill="#AB89AB" />
+<rect x="339.92" y="255.08" width="16" height="4.92" fill="#88AA88" />
+<rect x="369.08" y="259.88" width="16" height="0.12" fill="#AB89AB" />
+<rect x="398.25" y="249.39" width="16" height="10.61" fill="#88AA88" />
+<rect x="427.42" y="259.71" width="16" height="0.29" fill="#AB89AB" />
+<text x="55" y="30" font-size="20pt" fill="#777"  text-anchor="start" >C++: picks table: vector vs array</text>
+
+</svg>
+
