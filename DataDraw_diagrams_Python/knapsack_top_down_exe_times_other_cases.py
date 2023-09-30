@@ -45,14 +45,21 @@ def run_all():
     #     language_pair='C++ vs Rust -- TODD class problems',
     #     pickstable='on')
 
-    # method for a set of test cases for two implementations of the same language:
-    svgset1['exe_times_02_cpp_array_vs_vector']  = \
-        bar_diagram.lang_alter(import_str='exe_times_02_cpp_array_vs_vector',
-        diagram_title='C++: picks table: vector vs array')
+    svgset1['lang1_WEIGHTS_TODD_16_17_18_cpp_array_rust']  = \
+        bar_diagram.lang_pair(import_str='exe_times_WEIGHTS_TODD_16_17_18_cpp_array_rust',
+        language_pair='C++ vs Rust -- C++ array vs Rust vector',
+        pickstable='on')
 
-    svgset1['exe_times_02_cpp_array_vs_vector_TODD']  = \
-        bar_diagram.lang_alter(import_str='exe_times_02_cpp_array_vs_vector_TODD',
-        diagram_title='C++: picks table: vector vs array')
+
+
+    # method for a set of test cases for two implementations of the same language:
+    # svgset1['exe_times_02_cpp_array_vs_vector']  = \
+    #     bar_diagram.lang_alter(import_str='exe_times_02_cpp_array_vs_vector',
+    #     diagram_title='C++: picks table: vector vs array')
+
+    # svgset1['exe_times_02_cpp_array_vs_vector_TODD']  = \
+    #     bar_diagram.lang_alter(import_str='exe_times_02_cpp_array_vs_vector_TODD',
+    #     diagram_title='C++: picks table: vector vs array')
 
     return svgset1
 
