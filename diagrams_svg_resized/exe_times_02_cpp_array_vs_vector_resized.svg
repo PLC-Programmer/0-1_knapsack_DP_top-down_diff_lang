@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   sds="23"
+   width="624.10614"
+   height="580.36987"
+   version="1.1"
+   id="svg39"
+   sodipodi:docname="exe_times_02_cpp_array_vs_vector_resized.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs39" />
+  <sodipodi:namedview
+     id="namedview39"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.0672727"
+     inkscape:cx="284.19085"
+     inkscape:cy="265.32542"
+     inkscape:window-width="2560"
+     inkscape:window-height="1351"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg39" />
+  <text
+     x="268.83282"
+     y="103.17954"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text1">01_WEIGHTS4.in, vector</text>
+  <text
+     x="287.58295"
+     y="80.834023"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text2">01_WEIGHTS4.in, array</text>
+  <text
+     x="306.33304"
+     y="58.488506"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text3">02_WEIGHTS24_Kreher_Stinson.in, vector</text>
+  <text
+     x="325.07672"
+     y="36.15065"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text4">02_WEIGHTS24_Kreher_Stinson.in, array</text>
+  <text
+     x="343.82684"
+     y="13.805135"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text5">03_WEIGHTS100_Xu_Xu_et_al.in, vector</text>
+  <text
+     x="362.57697"
+     y="-8.5403814"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text6">03_WEIGHTS100_Xu_Xu_et_al.in, array</text>
+  <text
+     x="381.32065"
+     y="-30.878237"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text7">04_WEIGHTS_TODD_16.in, vector</text>
+  <text
+     x="400.07077"
+     y="-53.223755"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text8">04_WEIGHTS_TODD_16.in, array</text>
+  <text
+     x="418.82089"
+     y="-75.569267"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text9">04_WEIGHTS_TODD_17.in, vector</text>
+  <text
+     x="437.56454"
+     y="-97.907127"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text10">04_WEIGHTS_TODD_17.in, array</text>
+  <text
+     x="456.31467"
+     y="-120.25264"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text11">05_WEIGHTS_TODD_18.in, vector</text>
+  <text
+     x="475.06482"
+     y="-142.59816"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="start"
+     transform="rotate(50)"
+     id="text12">05_WEIGHTS_TODD_18.in, array</text>
+  <polyline
+     points="100,260,100,50"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline12"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,260,450,260"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline13"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,230.69,450,230.69"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline14"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,201.39,450,201.39"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline15"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,172.08,450,172.08"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline16"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,142.78,450,142.78"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline17"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,113.47,450,113.47"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline18"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,84.17,450,84.17"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline19"
+     transform="translate(-15.817709,-9.7395838)" />
+  <polyline
+     points="100,54.86,450,54.86"
+     stroke="#aaaaaa"
+     stroke-width="1"
+     id="polyline20"
+     transform="translate(-15.817709,-9.7395838)" />
+  <text
+     x="80.182289"
+     y="256.09039"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text20">0</text>
+  <text
+     x="80.182289"
+     y="226.79042"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text21">500</text>
+  <text
+     x="80.182289"
+     y="197.48042"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text22">1000</text>
+  <text
+     x="80.182289"
+     y="168.18042"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text23">1500</text>
+  <text
+     x="80.182289"
+     y="138.87042"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text24">2000</text>
+  <text
+     x="80.182289"
+     y="109.57041"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text25">2500</text>
+  <text
+     x="80.182289"
+     y="80.260414"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text26">3000</text>
+  <text
+     x="80.182289"
+     y="50.960419"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="end"
+     id="text27">3500</text>
+  <text
+     x="-145.26042"
+     y="14.182291"
+     font-size="18.6667px"
+     fill="#777777"
+     text-anchor="middle"
+     transform="rotate(-90)"
+     id="text28">execution time [ms]</text>
+  <rect
+     x="90.762291"
+     y="250.26042"
+     width="16"
+     height="0"
+     fill="#88aa88"
+     id="rect28" />
+  <rect
+     x="119.93229"
+     y="250.26042"
+     width="16"
+     height="0"
+     fill="#ab89ab"
+     id="rect29" />
+  <rect
+     x="149.10229"
+     y="243.87042"
+     width="16"
+     height="6.3899999"
+     fill="#88aa88"
+     id="rect30" />
+  <rect
+     x="178.2623"
+     y="245.45042"
+     width="16"
+     height="4.8099999"
+     fill="#ab89ab"
+     id="rect31" />
+  <rect
+     x="207.4323"
+     y="40.260418"
+     width="16"
+     height="210"
+     fill="#88aa88"
+     id="rect32" />
+  <rect
+     x="236.60229"
+     y="60.890415"
+     width="16"
+     height="189.37"
+     fill="#ab89ab"
+     id="rect33" />
+  <rect
+     x="265.76227"
+     y="248.50041"
+     width="16"
+     height="1.76"
+     fill="#88aa88"
+     id="rect34" />
+  <rect
+     x="294.93228"
+     y="250.26042"
+     width="16"
+     height="0"
+     fill="#ab89ab"
+     id="rect35" />
+  <rect
+     x="324.10229"
+     y="245.34042"
+     width="16"
+     height="4.9200001"
+     fill="#88aa88"
+     id="rect36" />
+  <rect
+     x="353.26227"
+     y="250.14043"
+     width="16"
+     height="0.12"
+     fill="#ab89ab"
+     id="rect37" />
+  <rect
+     x="382.43228"
+     y="239.65042"
+     width="16"
+     height="10.61"
+     fill="#88aa88"
+     id="rect38" />
+  <rect
+     x="411.60229"
+     y="249.97041"
+     width="16"
+     height="0.28999999"
+     fill="#ab89ab"
+     id="rect39" />
+  <text
+     x="39.182293"
+     y="20.260416"
+     font-size="26.6667px"
+     fill="#777777"
+     text-anchor="start"
+     id="text39">C++: picks table: vector vs array</text>
+</svg>
