@@ -16,39 +16,39 @@ input files with test cases:
   test case: ./test_cases/01_WEIGHTS4.in
     SUM = 0 [milliseconds]
     rounds = 10
-    MEDIAN = 0: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 0: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/02_WEIGHTS24_Kreher&Stinson.in
     SUM = 200 [milliseconds]
     rounds = 10
-    MEDIAN = 20: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 20: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/03_WEIGHTS100_Xu_Xu_et_al.in
     SUM = 28960 [milliseconds]
     rounds = 10
-    MEDIAN = 2896: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 2896: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/04_WEIGHTS_TODD_16.in
     SUM = 0 [milliseconds]
     rounds = 10
-    MEDIAN = 0: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 0: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/04_WEIGHTS_TODD_17.in
     SUM = 0 [milliseconds]
     rounds = 10
-    MEDIAN = 0: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 0: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/05_WEIGHTS_TODD_18.in
     SUM = 0 [milliseconds]
     rounds = 10
-    MEDIAN = 0: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 0: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/06_WEIGHTS_TODD_19.in
     SUM = 0 [milliseconds]
     rounds = 10
-    MEDIAN = 0: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 0: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/06_WEIGHTS_TODD_20.in
     SUM = 0 [milliseconds]
     rounds = 10
-    MEDIAN = 0: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 0: total number of CPU-milliseconds that the process spent in user mode
