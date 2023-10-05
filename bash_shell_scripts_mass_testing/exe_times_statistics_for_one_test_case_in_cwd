@@ -69,7 +69,7 @@ done
 echo "======================="
 echo "SUM = $SUM [milliseconds]"
 
-MEDIAN=$(($SUM/$ROUNDS))
-echo "median = $MEDIAN [milliseconds]"
+MEAN=$(($SUM/$ROUNDS))
+echo "mean = $MEAN [milliseconds]"
 
 # end of exe_times_statistics_for_one_test_case_in_cwd
