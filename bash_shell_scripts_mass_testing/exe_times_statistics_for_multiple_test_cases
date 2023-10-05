@@ -91,8 +91,8 @@ for i in $LIST; do
     echo "    SUM = $SUM [milliseconds]" >> $RESULTFILE
     echo "    rounds = $ROUNDS" >> $RESULTFILE
 
-    MEDIAN=$(($SUM/$ROUNDS))
-    echo "    MEDIAN = $MEDIAN: total number of CPU-milliseconds that the process spent in user mode" >> $RESULTFILE
+    MEAN=$(($SUM/$ROUNDS))
+    echo "    MEAN = $MEAN: total number of CPU-milliseconds that the process spent in user mode" >> $RESULTFILE
 
     rm *.in 2> /dev/null
 done
