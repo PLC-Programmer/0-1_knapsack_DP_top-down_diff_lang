@@ -14,29 +14,29 @@ input files with test cases:
   test case: ./test_cases/01_WEIGHTS4.in
     SUM = 0 [milliseconds]
     rounds = 10
-    MEDIAN = 0: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 0: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/02_WEIGHTS24_Kreher&Stinson.in
     SUM = 1090 [milliseconds]
     rounds = 10
-    MEDIAN = 109: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 109: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/03_WEIGHTS100_Xu_Xu_et_al.in
     SUM = 35830 [milliseconds]
     rounds = 10
-    MEDIAN = 3583: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 3583: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/04_WEIGHTS_TODD_16.in
     SUM = 300 [milliseconds]
     rounds = 10
-    MEDIAN = 30: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 30: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/04_WEIGHTS_TODD_17.in
     SUM = 840 [milliseconds]
     rounds = 10
-    MEDIAN = 84: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 84: total number of CPU-milliseconds that the process spent in user mode
   =======================
   test case: ./test_cases/05_WEIGHTS_TODD_18.in
     SUM = 1810 [milliseconds]
     rounds = 10
-    MEDIAN = 181: total number of CPU-milliseconds that the process spent in user mode
+    MEAN = 181: total number of CPU-milliseconds that the process spent in user mode
