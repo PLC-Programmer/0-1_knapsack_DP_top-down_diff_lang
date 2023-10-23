@@ -12,6 +12,7 @@ This worked for me in Ubuntu 22 LTS:
 
 2023
 **Getting Started with PowerShell in Linux [Beginner Guide]**
+
 https://www.tecmint.com/install-powershell-in-linux/
 
 ```
@@ -22,16 +23,9 @@ $ sudo apt-get update
 $ sudo apt-get install -y powershell
 ```
 
-Start PowerShell:
-```    
-$ pwsh
-PowerShell 7.3.8
-PS /home/booser> $PSVersionTable
-```
-
 Before running a ps script do this:
 ```
-> chmod 755 ./exe_times_statistics_for_one_test_case_in_cwd.ps1
+$ chmod 755 ./exe_times_statistics_for_one_test_case_in_cwd.ps1
 ```
 
 Put this statement into the first line of a ps script:
@@ -40,17 +34,17 @@ Put this statement into the first line of a ps script:
 #!/usr/bin/pwsh -Command
 ```
 
-#### exe_times_statistics_for_one_test_case_in_cwd
+#### exe_times_statistics_for_one_test_case_in_cwd.ps1
 
 This script is **only useful with having only one test case file** (*.in) in the cwd (current working directory) or relevant directory, respectively of the to be tested program. Shell commands for testing the program in (here only for _pickson_, otherwise take _picksoff_ for example):
 
-* Python: _$ ./exe_times_statistics_for_one_test_case_in_cwd python3 dp_knapsack_top-down.py pickson timeroff_
-* C++: _$ ./exe_times_statistics_for_one_test_case_in_cwd dp_knapsack_top-down_main pickson **20** timeroff_
-* C#: _./exe_times_statistics_for_one_test_case_in_cwd ./bin/Release/net7.0/linux-x64/dp_knapsack_top-down pickson timeroff_
-* Rust: _./exe_times_statistics_for_one_test_case_in_cwd ./target/release/dp_knapsack_top-down pickson timeroff_
+* Python: _$ ./exe_times_statistics_for_one_test_case_in_cwd.ps1 python3 dp_knapsack_top-down.py pickson timeroff_
+* C++: _$ ./exe_times_statistics_for_one_test_case_in_cwd.ps1 dp_knapsack_top-down_main pickson 20 timeroff_
+* C#: _$ ./exe_times_statistics_for_one_test_case_in_cwd.ps1 ./bin/Release/net7.0/linux-x64/dp_knapsack_top-down pickson timeroff_
+* Rust: _$ ./exe_times_statistics_for_one_test_case_in_cwd.ps1 ./target/release/dp_knapsack_top-down pickson timeroff_
 
- 
-### Internal execution timer
+
+### Shut the internal execution timer off
 
 Also use these scripts **only** with the activated option to bypass the internal execution timer of the to be tested program: [no_timer, notimer, timer_off, timeroff].
 Then also provide a [pickson, picksoff] option before ([no_picks, nopicks, picks_off, picksoff]), for example:
