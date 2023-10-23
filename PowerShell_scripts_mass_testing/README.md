@@ -10,11 +10,7 @@ Now floating point arithmetic is supported!
 
 This worked for me in Ubuntu 22 LTS:
 
-2023
-
-**Getting Started with PowerShell in Linux [Beginner Guide]**
-
-https://www.tecmint.com/install-powershell-in-linux/
+2023: Getting Started with PowerShell in Linux [Beginner Guide]: https://www.tecmint.com/install-powershell-in-linux/
 
 ```
 $ sudo apt-get install -y wget apt-transport-https software-properties-common
@@ -34,6 +30,8 @@ Put this statement into the first line of a ps script:
 ```
 #!/usr/bin/pwsh -Command
 ```
+
+<br/>
 
 #### exe_times_statistics_for_one_test_case_in_cwd.ps1
 
