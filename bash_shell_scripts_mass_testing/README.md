@@ -30,7 +30,7 @@ DO NOT SAVE UNTESTABLE INPUT FILES (TIMEOUT, NOT ENOUGH MEMORY) INTO THE TEST DI
 So preselect your test cases files when mass testing.
 
  
-### Internal execution timer
+### Shut the internal execution timer off
 
 Also use these scripts **only** with the activated option to bypass the internal execution timer of the to be tested program: [no_timer, notimer, timer_off, timeroff].
 Then also provide a [pickson, picksoff] option before ([no_picks, nopicks, picks_off, picksoff]), for example:
