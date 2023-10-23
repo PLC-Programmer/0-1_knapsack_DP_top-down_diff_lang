@@ -1,6 +1,6 @@
 2023-10-23: so far I only made a similar PowerShell script for testing an individual test case (with multiple runs and result output to console)
 
-### PowerShell shell scripts
+### PowerShell scripts
 
 ps = PowerShell
 
