@@ -1,4 +1,6 @@
-2023-10-23: so far I only made a similar PowerShell script for testing an individual test case (with multiple runs and result output to console)
+2023-10-23:
+* so far I only made a similar PowerShell script for testing an individual test case (with multiple runs and result output to console)
+* to do: _exe_times_statistics_for_multiple_test_cases.ps1_ (mass testing script)
 
 ### PowerShell scripts
 
