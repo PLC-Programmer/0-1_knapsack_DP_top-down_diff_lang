@@ -1,3 +1,5 @@
+2023-10-23: I'm evolving to use PowerShell scripts: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/PowerShell_scripts_mass_testing  However, I will leave these bash shell scripts here (in case you can't or don't want to use PowerShell scripts in Linux). 
+
 ### bash shell scripts
 
 Here are two scripts for mass testing for the execution times (here the "Total number of CPU-seconds that the process spent in user mode" (*)) for the programs in the different programming languages (Python, C++, C#, Rust, ...).
