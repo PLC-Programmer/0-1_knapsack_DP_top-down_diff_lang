@@ -1,4 +1,4 @@
-2023-10-23: so far I only did a similar PowerShell script for testing an individual test case (with multiple runs and result output to console)
+2023-10-23: so far I only made a similar PowerShell script for testing an individual test case (with multiple runs and result output to console)
 
 ### PowerShell shell scripts
 
@@ -11,6 +11,7 @@ Now floating point arithmetic is supported!
 This worked for me in Ubuntu 22 LTS:
 
 2023
+
 **Getting Started with PowerShell in Linux [Beginner Guide]**
 
 https://www.tecmint.com/install-powershell-in-linux/
@@ -23,7 +24,7 @@ $ sudo apt-get update
 $ sudo apt-get install -y powershell
 ```
 
-Before running a ps script do this:
+Before running a ps script make it executable:
 ```
 $ chmod 755 ./exe_times_statistics_for_one_test_case_in_cwd.ps1
 ```
@@ -36,12 +37,18 @@ Put this statement into the first line of a ps script:
 
 #### exe_times_statistics_for_one_test_case_in_cwd.ps1
 
+https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/blob/main/PowerShell_scripts_mass_testing/exe_times_statistics_for_one_test_case_in_cwd.ps1
+
 This script is **only useful with having only one test case file** (*.in) in the cwd (current working directory) or relevant directory, respectively of the to be tested program. Shell commands for testing the program in (here only for _pickson_, otherwise take _picksoff_ for example):
 
 * Python: _$ ./exe_times_statistics_for_one_test_case_in_cwd.ps1 python3 dp_knapsack_top-down.py pickson timeroff_
-* C++: _$ ./exe_times_statistics_for_one_test_case_in_cwd.ps1 dp_knapsack_top-down_main pickson 20 timeroff_
+* C++: _$ ./exe_times_statistics_for_one_test_case_in_cwd.ps1 dp_knapsack_top-down_main pickson **20** timeroff_
 * C#: _$ ./exe_times_statistics_for_one_test_case_in_cwd.ps1 ./bin/Release/net7.0/linux-x64/dp_knapsack_top-down pickson timeroff_
 * Rust: _$ ./exe_times_statistics_for_one_test_case_in_cwd.ps1 ./target/release/dp_knapsack_top-down pickson timeroff_
+
+Example output for a Python test case:
+
+![plot](./exe_times_statistics_for_one_test_case_in_cwd.ps1_python_WEIGHTS24_Kreher_Stinson_2023-10-23.png)
 
 
 ### Shut the internal execution timer off
