@@ -31,6 +31,11 @@ DO NOT SAVE UNTESTABLE INPUT FILES (TIMEOUT, NOT ENOUGH MEMORY) INTO THE TEST DI
 
 So preselect your test cases files when mass testing.
 
+
+Beginning of an example output for C++ test cases:
+
+![plot](./exe_times_statistics_for_multiple_test_cases_Cpp_example_2023-10-24.png)
+
  
 ### Shut the internal execution timer off
 
