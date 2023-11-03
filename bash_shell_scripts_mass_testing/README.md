@@ -1,8 +1,10 @@
-2023-10-23: I'm evolving to use PowerShell scripts: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/PowerShell_scripts_mass_testing  However, I will leave these bash shell scripts here (in case you can't or don't want to use PowerShell scripts in Linux). 
+2023-11-03: I added two complementary PowerShell scripts: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/PowerShell_scripts_mass_testing  However, I will leave these bash shell scripts here (in case you can't or don't want to use PowerShell scripts in Linux). 
 
 ### bash shell scripts
 
 Here are two scripts for mass testing for the execution times (here the "Total number of CPU-seconds that the process spent in user mode" (*)) for the programs in the different programming languages (Python, C++, C#, Rust, ...).
+
+Check Linux mode (755) to make these scripts executable.
 
 \
 (a) *_exe_times_statistics_for_one_test_case_in_cwd_* (755)
@@ -60,13 +62,8 @@ This seemingly odd mechanism of these scripts leave the computer programs in the
 However, I had to add the option (as a second or third user argument, respectively) to not use the internal execution timer: [no_timer, notimer, timer_off, timeroff]
 
 
-### Alternatives to bash shell scripts
+### Keep script outputs simple
 
-Of course, these test scripts could have also been implemented in **Python** for example to get better and easier control of the testing procedure (bash doesn't support floating point arithmetic for example) and to produce a fancy file with the test statistics, including variances, for efficient, further data processing (in JSON/JavaScript object notation for example).
+See from here: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/PowerShell_scripts_mass_testing#keep-script-outputs-simple
 
-Alternatively, these test scripts could also be implemented in **PowerShell on Linux** or Ubuntu, respectively (https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.3) to get better control of the testing procedure, including floating point arithmetic and the generation of result files in JSON which then can be read directly with the Python programs for the diagramming jobs: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/DataDraw_diagrams_Python
-
-But for now, using the Linux _time_ command employed by bash shell scripts, which apparently provide a precision of only +/-10 milliseconds, is good enough for me.
-
-\
-Check Linux mode (755) to make these scripts executable.
+##_end
