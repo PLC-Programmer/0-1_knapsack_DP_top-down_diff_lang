@@ -35,7 +35,7 @@ Put this statement into the first line of a ps script:
 
 <br/>
 
-#### exe_times_statistics_for_one_test_case_in_cwd.ps1
+#### (a) exe_times_statistics_for_one_test_case_in_cwd.ps1
 
 https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/blob/main/PowerShell_scripts_mass_testing/exe_times_statistics_for_one_test_case_in_cwd.ps1
 
@@ -75,7 +75,7 @@ However, I had to add the option (as a second or third user argument, respective
 
 <br/>
 
-#### exe_times_statistics_for_multiple_test_cases.ps1
+#### (b) exe_times_statistics_for_multiple_test_cases.ps1
 
 https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/blob/main/PowerShell_scripts_mass_testing/exe_times_statistics_for_multiple_test_cases.ps1
 
