@@ -35,7 +35,7 @@ Put this statement into the first line of a ps script:
 
 <br/>
 
-#### (a) exe_times_statistics_for_one_test_case_in_cwd.ps1
+### exe_times_statistics_for_one_test_case_in_cwd.ps1
 
 https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/blob/main/PowerShell_scripts_mass_testing/exe_times_statistics_for_one_test_case_in_cwd.ps1
 
@@ -51,7 +51,7 @@ Example output for a Python test case:
 ![plot](./exe_times_statistics_for_one_test_case_in_cwd.ps1_python_WEIGHTS24_Kreher_Stinson_2023-10-23.png)
 
 
-### Shut the internal execution timer off
+#### Shut the internal execution timer off
 
 Also use these scripts **only** with the activated option to bypass the internal execution timer of the to be tested program: [no_timer, notimer, timer_off, timeroff].
 Then also provide a [pickson, picksoff] option before ([no_picks, nopicks, picks_off, picksoff]), for example:
@@ -61,7 +61,7 @@ _$ python3 ./dp_knapsack_top-down.py pickson timeroff_
 I haven't provided elaborated user arguments evaluation for my programs.
 
  
-### Linux time command
+#### Linux time command
 
 These scripts use the Linux _time_ command, here for the C++ program for example:
 
@@ -75,7 +75,7 @@ However, I had to add the option (as a second or third user argument, respective
 
 <br/>
 
-#### (b) exe_times_statistics_for_multiple_test_cases.ps1
+### exe_times_statistics_for_multiple_test_cases.ps1
 
 https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/blob/main/PowerShell_scripts_mass_testing/exe_times_statistics_for_multiple_test_cases.ps1
 
@@ -110,7 +110,7 @@ Example output for two C++ test cases:
 <br/>
 
 
-### Keep script outputs simple
+#### Keep script outputs simple
 
 Of course, these test scripts could have been implemented in a much more sophisticated way, be it in Python or PowerShell, to produce test results files (in JSON/JavaScript object notation for example), which then can be read with Python programs for the diagramming jobs for example: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/DataDraw_diagrams_Python
 
