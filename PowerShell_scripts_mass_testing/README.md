@@ -87,9 +87,9 @@ This script takes all test case files (*.in) from directory _./test_cases_ and c
 * C#: _$ ./exe_times_statistics_for_multiple_test_cases.ps1 ./bin/Release/net7.0/linux-x64/dp_knapsack_top-down pickson timeroff_
 * Rust: _$ ./exe_times_statistics_for_multiple_test_cases.ps1 ./target/release/dp_knapsack_top-down pickson timeroff_
 
-This script will produce a log file _exe_times_statistics_for_multiple_test_cases_results_<language_id>.txt_ with some simple test statistics like mean execution time, variance and standard deviation for the test cases in _./test_cases_.
+This script will produce a log file _exe_times_statistics_for_multiple_test_cases_results_<language_id>._txt_ with some simple test statistics like mean execution time, variance and standard deviation for the test cases in _./test_cases_.
 
-Depending on the underlying command, this scripts makes a guess of the original programming language in use, so far:
+Depending on the underlying command, this scripts makes a guess of the original programming language to calculate the <language_id>, so far:
 
 * _python
 * _cpp
@@ -112,12 +112,12 @@ Example output for two C++ test cases:
 
 #### Keep script outputs simple
 
-Of course, these test scripts could have been implemented in a much more sophisticated way, be it in Python or PowerShell, to produce test results files (in JSON/JavaScript object notation for example), which then can be read with Python programs for the diagramming jobs for example: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/DataDraw_diagrams_Python
+Of course, these test scripts could have been implemented in a more sophisticated way, be it in Python or PowerShell, to produce test results files (in JSON/JavaScript object notation for example), which then can be read with Python programs for the diagramming jobs for example: https://github.com/PLC-Programmer/0-1_knapsack_DP_top-down_diff_lang/tree/main/DataDraw_diagrams_Python
 
 However, I decided against this effort. Producing only simple, unstructured, text-based test result files provides flexibility for the (sub-)selection of test cases, specifically when doing mass testing.
 
 Writing code to stitch together all kind of individual test result files to prepare them for further processing like diagramming may lead to further confusion of the user. It would also be a coding task way out of the scope of this endeavor, which should focus on comparing the execution speeds of different computer programming languages for the same computational task.
 
-Anyway, there are still other imperfections present like a precision of only +/-10 milliseconds from the used Linux _time_ command.
+There are also still other imperfections present like a precision of only +/-10 milliseconds from the used Linux _time_ command.
 
 ##_end
