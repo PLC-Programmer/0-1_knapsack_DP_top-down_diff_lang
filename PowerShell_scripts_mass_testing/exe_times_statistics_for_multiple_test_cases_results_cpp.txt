@@ -1,0 +1,24 @@
+
+!!DO NOT SAVE UNTESTABLE INPUT FILES (TIMEOUT, NOT ENOUGH MEMORY) INTO THE TEST DIRECTORY!! THIS WOULD CAUSE WRONG TEST RESULTS!
+
+2023-11-02 @ 22:47:00  (UTC+01:00) Central European Time (Berlin)
+
+Command to be run: /usr/bin/time -f '%U' ./dp_knapsack_top-down_main pickson 20 timeroff
+
+Input files with test cases:
+  ./test_cases/02_WEIGHTS24_Kreher&Stinson.in
+  ./test_cases/04_WEIGHTS_TODD_16.in
+  =======================
+  Test case: 02_WEIGHTS24_Kreher&Stinson.in
+    SUM = 920 [milliseconds]
+    rounds = 10
+    MEAN = 92.00: total number of CPU-milliseconds that the process spent in user mode
+    VARIANCE = 40.00 [milliseconds]^2
+    STD_DEV = 6.32 [milliseconds]
+  =======================
+  Test case: 04_WEIGHTS_TODD_16.in
+    SUM = 300 [milliseconds]
+    rounds = 10
+    MEAN = 30.00: total number of CPU-milliseconds that the process spent in user mode
+    VARIANCE = 111.11 [milliseconds]^2
+    STD_DEV = 10.54 [milliseconds]
